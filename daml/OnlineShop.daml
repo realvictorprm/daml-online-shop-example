@@ -1,0 +1,146 @@
+-- Copyright (c) 2021 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
+-- SPDX-License-Identifier: Apache-2.0
+
+module OnlineShop where
+
+import Prelude
+import DA.Optional
+import DA.List (delete)
+import Daml.Script (exerciseCmd, createCmd, query)
+
+everyone = fromSomeNote "This should be everyone" (partyFromText "everyone")
+admin = fromSomeNote "This should be admin" (partyFromText "admin")
+
+template ProductOrder
+  with
+    customer: Party
+    productName: Text
+  where
+    signatory customer, admin
+    key (customer, productName) : (Party, Text)
+    maintainer admin
+    ensure customer /= everyone
+    
+template Reservation
+  with
+    customer: Party
+    productName: Text
+  where
+    signatory customer, admin
+    key (customer, productName) : (Party, Text)
+    maintainer admin
+
+    ensure customer /= everyone
+
+    controller customer can
+      Reservation_CanceledByCustomer: ()
+        do
+          (productId, _) <- fetchByKey @Product productName
+          _ <- exercise productId Product_WithdrawReservation with reservation = this
+          return ()
+
+    controller admin can
+      Reservation_BeginProductOrder: ContractId ProductOrder
+        do
+          (productId, _) <- fetchByKey @Product productName
+          
+          create ProductOrder with customer; productName
+
+      Reservation_CanceledByAdmin: ()
+        do
+          (productId, _) <- fetchByKey @Product productName
+          _ <- exercise productId Product_WithdrawReservation with reservation = this
+          return ()
+
+template ProductDescription
+  with
+    name: Text
+    description: Text
+    imageUrl: Text
+  where
+    signatory admin
+    key name : Text
+    maintainer admin
+    observer everyone
+
+template Product
+  with
+    name: Text
+    inventory: Int
+    reservations: [ContractId Reservation]
+  where
+    signatory admin
+    key name : Text
+    maintainer admin
+
+    ensure inventory >= 0
+
+    controller admin can
+      Product_DecrementInventory: ContractId Product
+        with
+          reservationId: ContractId Reservation
+        do
+          assert (inventory > 0)
+          create this with inventory = this.inventory - 1; reservations = reservationId :: reservations
+          
+      
+      Product_WithdrawReservation: ContractId Product
+        with
+          reservation: Reservation
+        do
+          (reservationId, _) <- fetchByKey @Reservation (reservation.customer, name)
+          assert (reservationId `elem` reservations)
+          create this with inventory = this.inventory + 1; reservations = delete reservationId reservations
+
+      Product_ReservationCompleted: ContractId Product
+        with
+          reservationId: ContractId Reservation
+        do
+          assert (reservationId `elem` reservations)
+          create this with reservations = delete reservationId reservations
+
+template CreateReservationRequest
+  with
+    customer: Party
+    productName: Text
+  where
+    signatory customer
+    ensure customer /= everyone
+
+    controller admin can
+      TryAcceptReservation: ContractId Reservation
+        do
+          (productId, product) <- fetchByKey @Product productName
+          assert(product.inventory > 0)
+          let reservation = Reservation with customer; productName
+          doesReservationAlreadyExist <- visibleByKey @Reservation (reservation.customer, productName)
+          assert (not doesReservationAlreadyExist)
+          reservationId <- create reservation
+          _ <- exercise productId Product_DecrementInventory with reservationId
+          pure reservationId
+
+data ProductInfo = ProductInfo { name: Text }
+
+infixl 1 &
+
+a & f = f a
+
+createProduct name inventory = submit admin do
+  createCmd Product with name; inventory; reservations = []
+
+availableProducts() = do
+  _ <- createProduct "PS5" 100
+  _ <- createProduct "PS4" 100_000
+  products <- query @Product admin
+  products & map (\(_, product) -> ProductInfo { name = product.name } ) & pure
+
+
+
+alice = fromSomeNote "This should be alice" (partyFromText "alice")
+testing = do
+  _ <- createProduct "PS5" 100
+  _ <- createProduct "PS4" 100_000
+  reservationRequestId <- submit alice do createCmd CreateReservationRequest with customer = alice; productName = "PS5"
+  reservation <- submit admin do exerciseCmd reservationRequestId TryAcceptReservation
+  pure ()
+  

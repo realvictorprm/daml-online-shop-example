@@ -1,0 +1,9 @@
+/.daml
+target
+build
+node_modules
+build
+.idea
+.bsp
+projec/project
+daml.js

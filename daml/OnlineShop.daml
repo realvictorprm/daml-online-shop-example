@@ -108,16 +108,17 @@ template CreateReservationRequest
     ensure customer /= everyone
 
     controller admin can
-      TryAcceptReservation: ContractId Reservation
+      TryAcceptReservation: Bool
         do
           (productId, product) <- fetchByKey @Product productName
           assert(product.inventory > 0)
           let reservation = Reservation with customer; productName
           doesReservationAlreadyExist <- visibleByKey @Reservation (reservation.customer, productName)
-          assert (not doesReservationAlreadyExist)
-          reservationId <- create reservation
-          _ <- exercise productId Product_DecrementInventory with reservationId
-          pure reservationId
+          if doesReservationAlreadyExist then return False
+          else do
+            reservationId <- create reservation
+            _ <- exercise productId Product_DecrementInventory with reservationId
+            return True
 
 data ProductInfo = ProductInfo { name: Text }
 

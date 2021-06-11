@@ -6,26 +6,26 @@ import _root_.com.daml.ledger.client.{binding=>$u0020lfdomainapi}
 import _root_.com.daml.ledger.api.v1.{value=>$u0020rpcvalue}
 package com.daml.quickstart.iou.model {
   package OnlineShop {
-    final case class Product_DecrementInventory(reservation: com.daml.quickstart.iou.model.OnlineShop.Reservation) extends ` lfdomainapi`.ValueRef
+    final case class Product_DecrementInventory(reservationId: ` lfdomainapi`.Primitive.ContractId[com.daml.quickstart.iou.model.OnlineShop.Reservation]) extends ` lfdomainapi`.ValueRef
 
-    object Product_DecrementInventory extends ` lfdomainapi`.ValueRefCompanion with _root_.scala.Function1[com.daml.quickstart.iou.model.OnlineShop.Reservation, _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] {
+    object Product_DecrementInventory extends ` lfdomainapi`.ValueRefCompanion with _root_.scala.Function1[` lfdomainapi`.Primitive.ContractId[com.daml.quickstart.iou.model.OnlineShop.Reservation], _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] {
       import _root_.scala.language.higherKinds;
       trait view[` C`[_]] extends ` lfdomainapi`.encoding.RecordView[` C`, view] { $u0020view =>
-        val reservation: ` C`[com.daml.quickstart.iou.model.OnlineShop.Reservation];
+        val reservationId: ` C`[` lfdomainapi`.Primitive.ContractId[com.daml.quickstart.iou.model.OnlineShop.Reservation]];
         final override def hoist[` D`[_]](` f` : _root_.scalaz.~>[` C`, ` D`]): view[` D`] = {
           final class $anon extends _root_.scala.AnyRef with view[` D`] {
-            override val reservation = ` f`(` view`.reservation)
+            override val reservationId = ` f`(` view`.reservationId)
           };
           new $anon()
         }
       };
       implicit val `Product_DecrementInventory Value`: ` lfdomainapi`.Value[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] = {
         final class $anon extends this.`Value ValueRef`[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] {
-          override def write(value: _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory): ` rpcvalue`.Value.Sum = ` record`(scala.Tuple2("reservation", ` lfdomainapi`.Value.encode(value.reservation)));
+          override def write(value: _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory): ` rpcvalue`.Value.Sum = ` record`(scala.Tuple2("reservationId", ` lfdomainapi`.Value.encode(value.reservationId)));
           override def read(argValue: ` rpcvalue`.Value.Sum): _root_.scala.Option[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] = argValue.record.flatMap(((` r` ) => if (` r`.fields.length.==(1))
             ` r`.fields(0) match {
-              case ` rpcvalue`.RecordField((""| "reservation"), _root_.scala.Some(zv0)) => (` lfdomainapi`.Value.decode[com.daml.quickstart.iou.model.OnlineShop.Reservation](zv0) match {
-                case _root_.scala.Some(reservation) => Some(Product_DecrementInventory(reservation))
+              case ` rpcvalue`.RecordField((""| "reservationId"), _root_.scala.Some(zv0)) => (` lfdomainapi`.Value.decode[` lfdomainapi`.Primitive.ContractId[com.daml.quickstart.iou.model.OnlineShop.Reservation]](zv0) match {
+                case _root_.scala.Some(reservationId) => Some(Product_DecrementInventory(reservationId))
                 case _root_.scala.None => _root_.scala.None
               })
               case _ => _root_.scala.None
@@ -40,13 +40,13 @@ package com.daml.quickstart.iou.model {
         final class $anon extends ` lfdomainapi`.encoding.LfEncodable[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] {
           override def encoding(lte: ` lfdomainapi`.encoding.LfTypeEncoding): lte.Out[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] = {
             object `view ` extends view[lte.Field] {
-              val reservation = lte.field("reservation", ` lfdomainapi`.encoding.LfEncodable.encoding[com.daml.quickstart.iou.model.OnlineShop.Reservation](lte))
+              val reservationId = lte.field("reservationId", ` lfdomainapi`.encoding.LfEncodable.encoding[` lfdomainapi`.Primitive.ContractId[com.daml.quickstart.iou.model.OnlineShop.Reservation]](lte))
             };
             {
-              val `recordFields `: lte.RecordFields[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] = lte.RecordFields.xmapN(lte.fields(`view `.reservation))({
-                case reservation => _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory(reservation)
+              val `recordFields `: lte.RecordFields[_root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory] = lte.RecordFields.xmapN(lte.fields(`view `.reservationId))({
+                case reservationId => _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory(reservationId)
               })({
-                case _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory(reservation) => reservation
+                case _root_.com.daml.quickstart.iou.model.OnlineShop.Product_DecrementInventory(reservationId) => reservationId
               });
               lte.record(` dataTypeId`, `recordFields `)
             }

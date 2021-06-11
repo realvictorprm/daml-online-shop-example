@@ -39,7 +39,7 @@ class ClientUtil(
   def submitCommand[T](
       sender: P.Party,
       workflowId: WorkflowId,
-      command: P.Update[P.ContractId[T]],
+      command: P.Update[T],
   ): Future[Empty] = {
     commandClient.submitSingleCommand(submitRequest(sender, workflowId, command))
   }
@@ -47,7 +47,7 @@ class ClientUtil(
   def submitRequest[T](
       party: P.Party,
       workflowId: WorkflowId,
-      seq: P.Update[P.ContractId[T]]*
+      seq: P.Update[T]*
   ): SubmitRequest = {
     val commands = Commands(
       ledgerId = ledgerId.unwrap,

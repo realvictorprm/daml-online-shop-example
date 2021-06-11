@@ -76,6 +76,7 @@ object IouMain extends App with StrictLogging {
   val foo = for {
       clientUtil <- clientUtilF
       offset0 <- offset0F
+      client <- clientF
       _ <- clientUtil.subscribe(admin, offset0, None)(tc => {
         logger.info(s"incoming contract: $tc")
         decodeCreated[CreateReservationRequest](tc).foreach { contract =>

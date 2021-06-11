@@ -6,5 +6,5 @@ import _root_.com.daml.ledger.client.{binding=>$u0020lfdomainapi}
 package com.daml.quickstart.iou.model {
   object EventDecoder extends ` lfdomainapi`.EventDecoderApi(templateTypes = _root_.scala.collection.immutable.Seq[(` lfdomainapi`.TemplateCompanion[_$1] forSome { 
     type _$1
-  })](com.daml.quickstart.iou.model.OnlineShop.ProductDescription, com.daml.quickstart.iou.model.OnlineShop.Product, com.daml.quickstart.iou.model.OnlineShop.CreateReservationRequest, com.daml.quickstart.iou.model.OnlineShop.Reservation, com.daml.quickstart.iou.model.OnlineShop.ProductOrder))
+  })](com.daml.quickstart.iou.model.OnlineShop.CreateReservationRequest, com.daml.quickstart.iou.model.OnlineShop.Reservation, com.daml.quickstart.iou.model.OnlineShop.ProductDescription, com.daml.quickstart.iou.model.OnlineShop.Product, com.daml.quickstart.iou.model.OnlineShop.ProductOrder))
 }

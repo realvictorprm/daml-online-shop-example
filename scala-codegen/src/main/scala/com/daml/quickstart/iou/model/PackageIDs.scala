@@ -24,6 +24,6 @@ package com.daml.quickstart.iou.model {
     val `GHC.Stack.Types`: _root_.scala.Predef.String = "b76d13799ea5488f281440b63072ad3e3d48d72936144e7d19209c9cf115aa9d";
     val `GHC.Tuple`: _root_.scala.Predef.String = "6839a6d3d430c569b2425e9391717b44ca324b88ba621d597778811b2d05031d";
     val `GHC.Types`: _root_.scala.Predef.String = "518032f41fd0175461b35ae0c9691e08b4aea55e62915f8360af2cc7a1f2ba6c";
-    val OnlineShop: _root_.scala.Predef.String = "3440076fc7ebbb2031eef8afc84abae8f177bf6673ad8945d0b48fdc8c6183db"
+    val OnlineShop: _root_.scala.Predef.String = "95410f3fb646fe051d64e3963607e6fbc9310ad6bacd70ab857731007d9236f1"
   }
 }

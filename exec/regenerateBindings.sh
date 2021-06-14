@@ -1,3 +1,5 @@
+cd $(dirname $BASH_SOURCE)
+cd ../
 daml build
 rm -r scala-codegen/src
 daml codegen scala

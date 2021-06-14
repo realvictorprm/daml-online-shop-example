@@ -1,4 +1,4 @@
 #!/bin/bash
 cd $(dirname $BASH_SOURCE)
-cd ../
-daml start
+cd ../..
+sbt application/run

@@ -1,3 +1,4 @@
+{-# LANGUAGE DerivingStrategies #-}
 -- Copyright (c) 2021 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
 -- SPDX-License-Identifier: Apache-2.0
 
@@ -6,20 +7,48 @@ module OnlineShop where
 import Prelude
 import DA.Optional
 import DA.List (delete)
-import Daml.Script (exerciseCmd, createCmd, query)
+import Daml.Script
+import DA.Foldable (forA_)
+
+infixl 1 &
+
+a & f = f a
 
 everyone = fromSomeNote "This should be everyone" (partyFromText "everyone")
 admin = fromSomeNote "This should be admin" (partyFromText "admin")
 
-template ProductOrder
+type ProductName = Text
+
+data OrderStatus =
+  ReceivedOrder
+  | PreShipping
+  | Shipping
+  | Shipped
+  deriving Eq
+  deriving Show
+
+template Order
   with
     customer: Party
-    productName: Text
+    products: [ProductName]
+    status: OrderStatus
   where
     signatory customer, admin
-    key (customer, productName) : (Party, Text)
-    maintainer admin
+
+template OrderRequest
+  with
+    customer: Party
+    reservations: [ProductName]
+  where
+    signatory customer
     ensure customer /= everyone
+
+    controller admin can
+      OrderRequest_Process: ContractId Order
+        do
+          reservationIds <- reservations & map (\productName -> fetchByKey @Reservation (customer, productName)) & sequence & fmap (map fst)
+          forA_ reservationIds $ \cid -> archive cid
+          create Order with customer, products = reservations, status = ReceivedOrder
     
 template Reservation
   with
@@ -28,7 +57,7 @@ template Reservation
   where
     signatory customer, admin
     key (customer, productName) : (Party, Text)
-    maintainer admin
+    maintainer key._1, admin
 
     ensure customer /= everyone
 
@@ -40,11 +69,6 @@ template Reservation
           return ()
 
     controller admin can
-      Reservation_BeginProductOrder: ContractId ProductOrder
-        do
-          (productId, _) <- fetchByKey @Product productName
-          
-          create ProductOrder with customer; productName
 
       Reservation_CanceledByAdmin: ()
         do
@@ -108,23 +132,19 @@ template CreateReservationRequest
     ensure customer /= everyone
 
     controller admin can
-      TryAcceptReservation: Bool
+      TryAcceptReservation: Optional (ContractId Reservation)
         do
           (productId, product) <- fetchByKey @Product productName
           assert(product.inventory > 0)
           let reservation = Reservation with customer; productName
           doesReservationAlreadyExist <- visibleByKey @Reservation (reservation.customer, productName)
-          if doesReservationAlreadyExist then return False
+          if doesReservationAlreadyExist then return None
           else do
             reservationId <- create reservation
             _ <- exercise productId Product_DecrementInventory with reservationId
-            return True
+            return $ Some reservationId
 
 data ProductInfo = ProductInfo { name: Text }
-
-infixl 1 &
-
-a & f = f a
 
 createProduct name inventory = submit admin do
   createCmd Product with name; inventory; reservations = []
@@ -135,13 +155,18 @@ availableProducts() = do
   products <- query @Product admin
   products & map (\(_, product) -> ProductInfo { name = product.name } ) & pure
 
-
-
 alice = fromSomeNote "This should be alice" (partyFromText "alice")
+
 testing = do
   _ <- createProduct "PS5" 100
   _ <- createProduct "PS4" 100_000
-  reservationRequestId <- submit alice do createCmd CreateReservationRequest with customer = alice; productName = "PS5"
-  reservation <- submit admin do exerciseCmd reservationRequestId TryAcceptReservation
-  pure ()
+  reservationRequestId <- submit  alice do createCmd CreateReservationRequest with customer = alice; productName = "PS5"
+  reservationCreated <- submit admin do exerciseCmd reservationRequestId TryAcceptReservation
+  case reservationCreated of
+    Some reservationId -> do
+      orderReq <- submit alice do createCmd OrderRequest with customer = alice; reservations = ["PS5"]
+      order <- submit admin do
+              exerciseCmd orderReq OrderRequest_Process
+      query @Order alice
+    None -> pure []
   

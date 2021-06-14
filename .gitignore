@@ -7,3 +7,4 @@ build
 .bsp
 projec/project
 daml.js
+scala-codegen

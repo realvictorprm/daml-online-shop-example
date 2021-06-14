@@ -9,7 +9,7 @@ import com.daml.ledger.api.refinements.ApiTypes.ApplicationId
 import com.daml.ledger.client.LedgerClient
 import com.daml.ledger.client.binding.{Primitive => P}
 import com.daml.ledger.client.configuration.{CommandClientConfiguration, LedgerClientConfiguration, LedgerIdRequirement}
-import com.daml.quickstart.iou.model.OnlineShop.{CreateReservationRequest, Product, ProductDescription}
+import com.daml.quickstart.iou.model.OnlineShop.{CreateReservationRequest, OrderRequest, Product, ProductDescription}
 import com.monkey.business.ClientUtil.workflowIdFromParty
 import com.monkey.business.DecodeUtil.decodeCreated
 import com.typesafe.scalalogging.StrictLogging
@@ -80,14 +80,21 @@ object IouMain extends App with StrictLogging {
       _ <- clientUtil.subscribe(admin, offset0, None)(tc => {
         logger.info(s"incoming contract: $tc")
         decodeCreated[CreateReservationRequest](tc).foreach { contract =>
-            logger.info(s"this is a reservation request: $contract")
-            clientUtil.submitCommand(admin, workflowIdAdmin, contract.contractId.exerciseTryAcceptReservation(admin))
-              .onComplete {
-                case a => logger.info(s"submit result: $a")
-              }
+          logger.info(s"this is a reservation request: $contract")
+          clientUtil.submitCommand(admin, workflowIdAdmin, contract.contractId.exerciseTryAcceptReservation(admin))
+            .onComplete {
+              case Failure(e) => logger.error("Submit reservation request failed", e)
+              case Success(a) => logger.info(s"submit result: $a")
+            }
         }
-      }
-      )
+        decodeCreated[OrderRequest](tc).foreach { contract =>
+          logger.info(s"this is a reservation request: $contract")
+          clientUtil.submitCommand(admin, workflowIdAdmin, contract.contractId.exerciseOrderRequest_Process(admin))
+            .onComplete {
+              case Failure(e) => logger.error("Submit reservation request failed", e)
+              case Success(a) => logger.info(s"submit result: $a")
+            }
+        }})
     } yield ()
 
   val issuerFlow: Future[Unit] = for {

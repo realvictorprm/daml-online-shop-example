@@ -8,3 +8,10 @@ To run the app do:
 
 In the last step a browser window should have opened with the online shop being displayed.
 Have fun!
+
+## Development
+
+If you change the daml code make sure to:
+1. Regenerate the bindings via `exec/regenerateBindings`
+1. Restart the sandbox via pressing `r` in the terminal it's open or completely restarting it
+1. Restarting the background task (stop it and then start it again via `application/exec/start`)

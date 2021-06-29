@@ -1,13 +1,15 @@
 // Copyright (c) 2021 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import React from 'react';
-import { Container, Grid, Header, Segment, List, Button } from 'semantic-ui-react';
+import React, { Fragment, useState } from 'react';
+import { Container, Grid, Header, Segment, List, Button, Portal, Message, Transition, Icon, Step } from 'semantic-ui-react';
 import { useParty, useLedger, useStreamQueries } from '@daml/react';
 import { OnlineShop } from '@daml.js/create-daml-app'
-import { CreateReservationRequest, Order, OrderRequest, ProductDescription, Reservation } from '@daml.js/create-daml-app/lib/OnlineShop';
+import { AcknowledgeDeclinedReservation, CreateReservationRequest, DeclinedReservation, Order, OrderRequest, ProductInfo, Reservation } from '@daml.js/create-daml-app/lib/OnlineShop';
 import ProductList from './ProductList';
 import { ContractId } from '@daml/types';
+import { SemanticToastContainer, toast } from 'react-semantic-toasts';
+import 'react-semantic-toasts/styles/react-semantic-alert.css';
 
 // USERS_BEGIN
 const MainView: React.FC = () => {
@@ -16,10 +18,10 @@ const MainView: React.FC = () => {
 
   const ledger = useLedger();
 
-  const raw_products = useStreamQueries(ProductDescription);
+  const raw_products = useStreamQueries(ProductInfo);
   const products = raw_products.contracts.map(product => product.payload)
 
-  const productMap = new Map<string, ProductDescription>(products.map(product => [product.name, product]))
+  const productMap = new Map<string, ProductInfo>(products.map(product => [product.name, product]))
 
   const raw_reservations = useStreamQueries(Reservation);
   const reservations = raw_reservations.contracts.map(reservation => reservation.payload)
@@ -27,8 +29,18 @@ const MainView: React.FC = () => {
   const raw_orders = useStreamQueries(Order);
   const orders: [OnlineShop.Order, ContractId<OnlineShop.Order>][] = raw_orders.contracts.map(order => [order.payload, order.contractId])
 
+  const raw_declinedReservations = useStreamQueries(DeclinedReservation);
+  const declinedReservations = raw_declinedReservations.contracts.map(r => r.payload)
 
-  const onPutInBasket = async (product: OnlineShop.ProductDescription) => {
+  const [foo, bar] = useState(true)
+
+  const empty: ContractId<DeclinedReservation>[] = []
+
+  const onPortalClose = async (contractId: ContractId<DeclinedReservation>) => {
+    await ledger.exercise(DeclinedReservation.AcknowledgeDeclinedReservation, contractId, {})
+  }
+
+  const onPutInBasket = async (product: OnlineShop.ProductInfo) => {
     await ledger.create(CreateReservationRequest, { customer: username, productName: product.name })
   }
 
@@ -76,7 +88,9 @@ const MainView: React.FC = () => {
             )}
             <List.Item style={{ alignSelf: "flexEnd" }}>
               <List.Content floated="right">
-                <Button onClick={_ => onOrder()} style={{ flexGrow: 0, alignment: "Right" }} >Order now</Button>
+                <Button icon color='orange' onClick={_ => onOrder()} style={{ flexGrow: 0, alignment: "Right" }}>
+                  Order now  <Icon name='arrow circle right' />
+                </Button>
               </List.Content>
             </List.Item>
           </List>
@@ -84,21 +98,50 @@ const MainView: React.FC = () => {
           :
           <Container style={{ flexGrow: 0, alignment: "center" }}>
             <Header as='h3' size='small' color='black' textAlign='center' style={{ padding: '1ex 0em 0ex 0em', flexGrow: 0 }}>
-              Your basket is empty.
+              Your basket is empty, put some stuff in :-)
             </Header>
           </Container>
         }
       </Segment>
     </Grid.Column>
 
+  const mkOrderStatus = (order: Order) =>
+    <Fragment>
+      <Step.Group size='mini'>
+        <Step active={order.status == "ReceivedOrder"}>
+          <Icon name='cogs' />
+          <Step.Content>
+            <Step.Title>Processing</Step.Title>
+          </Step.Content>
+        </Step>
+        <Step active={order.status == "PreShipping"}>
+          <Icon name='warehouse' />
+          <Step.Content>
+            <Step.Title>Preparing shipping</Step.Title>
+          </Step.Content>
+        </Step>
+        <Step active={order.status == "Shipping"}>
+          <Icon name='truck' />
+          <Step.Content>
+            <Step.Title>Shipping</Step.Title>
+          </Step.Content>
+        </Step>
+
+        <Step active={order.status == "Shipped"}>
+          <Icon name='home' />
+          <Step.Content>
+            <Step.Title>Shipped</Step.Title>
+          </Step.Content>
+        </Step>
+      </Step.Group>
+    </Fragment>
+
   const mkOrderProductList = (order: Order) =>
     <Segment>
-      <Header style={{ flexGrow: 0 }}>Order status: {order.status}
-      </Header>
       <List divided relaxed>
         {[...order.products].sort().map(product =>
           <List.Item key={product}>
-            <List.Header className='test-select-user-in-network'>{product}</List.Header>
+            <List.Header>{product}</List.Header>
             <List.Content floated="right">
               {productMap.get(product)?.price} CHF
             </List.Content>
@@ -118,6 +161,7 @@ const MainView: React.FC = () => {
           </List.Content>
         </List.Item>
       </List>
+      {mkOrderStatus(order)}
     </Segment>
 
   const ordersView =
@@ -133,10 +177,40 @@ const MainView: React.FC = () => {
       </List>
     </Grid.Column>
 
+  const showPortal = () =>
+    <Portal open={declinedReservations.length > 0}>
+      <Transition.Group
+        as={List}
+        duration={200}
+        divided
+        animation="fade left"
+        style={{
+          right: '2em',
+          position: 'fixed',
+          top: '5em',
+          zIndex: 1000,
+        }}>
+        {[...raw_declinedReservations.contracts].map(value => {
+          setTimeout(() => onPortalClose(value.contractId), 10000)
+          return (<List.Item>
+            <Message floating={true} negative size="big" onDismiss={_ => onPortalClose(value.contractId)}>
+              <Message.Header>
+                We're sorry but this failed :-(
+              </Message.Header>
+              <Message.Content>
+                Reservation for product {(value?.payload.productName)} could not be fulfilled due to: {value.payload.reason}
+              </Message.Content>
+            </Message>
+          </List.Item>);
+        }
+        )}
+      </Transition.Group>
+    </Portal>
 
   return (
-    <Container>
-      <Grid centered columns={3}>
+    <Container fluid>
+      {showPortal()}
+      <Grid centered columns={3} style={{ marginLeft: '1em', marginRight: '1em' }}>
         <Grid.Row stretched>
           <Grid.Column>
             <Header as='h1' size='huge' color='blue' textAlign='center' style={{ padding: '1ex 0em 0ex 0em' }}>

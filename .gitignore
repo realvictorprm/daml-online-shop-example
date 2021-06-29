@@ -11,3 +11,6 @@ scala-codegen
 !/ui/exec/build
 navigator.log
 sandbox.log
+.bloop
+.metals
+metals.sbt

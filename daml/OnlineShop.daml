@@ -6,7 +6,6 @@ module OnlineShop where
 
 import Prelude
 import DA.Optional
-import DA.List (delete)
 import Daml.Script
 import DA.Foldable (forA_)
 
@@ -18,6 +17,62 @@ everyone = fromSomeNote "This should be everyone" (partyFromText "everyone")
 admin = fromSomeNote "This should be admin" (partyFromText "admin")
 
 type ProductName = Text
+
+template ProductInfo
+  with
+    name: Text
+    description: Text
+    imageUrl: Text
+    price: Decimal
+    inventory: Int
+  where
+    signatory admin
+    key name : Text
+    maintainer admin
+    observer everyone
+    ensure price > 0.0 && inventory >= 0
+
+    controller admin can
+      ProductInfo_IncrementInventory: ContractId ProductInfo
+        do create this with inventory = this.inventory + 1
+
+      ProductInfo_DecrementInventory: ContractId ProductInfo
+        do
+          assert (inventory > 0)
+          create this with inventory = this.inventory - 1
+
+      ProductInfo_SetInventory: ContractId ProductInfo
+        with
+          newInventory: Int
+        do
+          assert (newInventory >= 0)
+          create this with inventory = newInventory
+
+template Reservation
+  with
+    customer: Party
+    productName: Text
+  where
+    signatory customer, admin
+    key (customer, productName) : (Party, Text)
+    maintainer key._1, admin
+
+    ensure customer /= everyone
+
+    controller customer can
+      Reservation_CanceledByCustomer: ()
+        do
+          (productId, _) <- fetchByKey @ProductInfo productName
+          _ <- exercise productId ProductInfo_IncrementInventory
+          return ()
+
+    controller admin can
+
+      Reservation_CanceledByAdmin: ()
+        do
+          (productId, _) <- fetchByKey @ProductInfo productName
+          _ <- exercise productId ProductInfo_IncrementInventory
+          return ()
 
 data OrderStatus =
   ReceivedOrder
@@ -49,81 +104,26 @@ template OrderRequest
           reservationIds <- reservations & map (\productName -> fetchByKey @Reservation (customer, productName)) & sequence & fmap (map fst)
           forA_ reservationIds $ \cid -> archive cid
           create Order with customer, products = reservations, status = ReceivedOrder
-    
-template Reservation
+
+data DeclineReason =
+  BasketAlreadyContainsProduct
+  | OutOfStock
+
+  deriving Eq
+  deriving Show
+
+template DeclinedReservation
   with
     customer: Party
     productName: Text
+    reason: DeclineReason
   where
-    signatory customer, admin
-    key (customer, productName) : (Party, Text)
-    maintainer key._1, admin
-
-    ensure customer /= everyone
+    signatory admin
+    observer customer
 
     controller customer can
-      Reservation_CanceledByCustomer: ()
-        do
-          (productId, _) <- fetchByKey @Product productName
-          _ <- exercise productId Product_WithdrawReservation with reservation = this
-          return ()
-
-    controller admin can
-
-      Reservation_CanceledByAdmin: ()
-        do
-          (productId, _) <- fetchByKey @Product productName
-          _ <- exercise productId Product_WithdrawReservation with reservation = this
-          return ()
-
-template ProductDescription
-  with
-    name: Text
-    description: Text
-    imageUrl: Text
-    price: Decimal
-  where
-    signatory admin
-    key name : Text
-    maintainer admin
-    observer everyone
-    ensure price > 0.0
-
-template Product
-  with
-    name: Text
-    inventory: Int
-    reservations: [ContractId Reservation]
-  where
-    signatory admin
-    key name : Text
-    maintainer admin
-
-    ensure inventory >= 0
-
-    controller admin can
-      Product_DecrementInventory: ContractId Product
-        with
-          reservationId: ContractId Reservation
-        do
-          assert (inventory > 0)
-          create this with inventory = this.inventory - 1; reservations = reservationId :: reservations
-          
-      
-      Product_WithdrawReservation: ContractId Product
-        with
-          reservation: Reservation
-        do
-          (reservationId, _) <- fetchByKey @Reservation (reservation.customer, name)
-          assert (reservationId `elem` reservations)
-          create this with inventory = this.inventory + 1; reservations = delete reservationId reservations
-
-      Product_ReservationCompleted: ContractId Product
-        with
-          reservationId: ContractId Reservation
-        do
-          assert (reservationId `elem` reservations)
-          create this with reservations = delete reservationId reservations
+      AcknowledgeDeclinedReservation: ()
+       do return ()
 
 template CreateReservationRequest
   with
@@ -136,32 +136,33 @@ template CreateReservationRequest
     controller admin can
       TryAcceptReservation: Optional (ContractId Reservation)
         do
-          (productId, product) <- fetchByKey @Product productName
-          assert(product.inventory > 0)
-          let reservation = Reservation with customer; productName
-          doesReservationAlreadyExist <- visibleByKey @Reservation (reservation.customer, productName)
-          if doesReservationAlreadyExist then return None
+          (productId, product) <- fetchByKey @ProductInfo productName
+          if product.inventory > 0 then do
+            let reservation = Reservation with customer; productName
+            doesReservationAlreadyExist <- visibleByKey @Reservation (reservation.customer, productName)
+            if doesReservationAlreadyExist then do
+              _ <- create DeclinedReservation with customer; productName; reason = BasketAlreadyContainsProduct
+              return None
+            else do
+              reservationId <- create reservation
+              _ <- exercise productId ProductInfo_DecrementInventory
+              return $ Some reservationId
           else do
-            reservationId <- create reservation
-            _ <- exercise productId Product_DecrementInventory with reservationId
-            return $ Some reservationId
+            _ <- create DeclinedReservation with customer; productName; reason = OutOfStock
+            return None
 
-data ProductInfo = ProductInfo { name: Text }
-
-createProduct name inventory = submit admin do
-  createCmd Product with name; inventory; reservations = []
+createProductInfo name description imageUrl price inventory = submit admin do
+  createCmd ProductInfo with name; description; imageUrl; price; inventory
 
 availableProducts() = do
-  _ <- createProduct "PS5" 100
-  _ <- createProduct "PS4" 100_000
-  products <- query @Product admin
-  products & map (\(_, product) -> ProductInfo { name = product.name } ) & pure
+  _ <- createProductInfo "PS5" "Nice thing" "" 550.0 100
+  _ <- createProductInfo "PS4" "Also nice" "" 200.0 100_000
+  query @ProductInfo admin
 
 alice = fromSomeNote "This should be alice" (partyFromText "alice")
 
 testing = do
-  _ <- createProduct "PS5" 100
-  _ <- createProduct "PS4" 100_000
+  products <- availableProducts()
   reservationRequestId <- submit  alice do createCmd CreateReservationRequest with customer = alice; productName = "PS5"
   reservationCreated <- submit admin do exerciseCmd reservationRequestId TryAcceptReservation
   case reservationCreated of

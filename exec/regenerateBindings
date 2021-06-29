@@ -7,5 +7,5 @@ daml codegen scala
 cd ui
 rm -r daml.js
 rm -r node_modules/@daml.js
-rm -r package.lock.json
+rm -r package-lock.json
 daml codegen js ../.daml/dist/create-daml-app-0.1.0.dar -o daml.js

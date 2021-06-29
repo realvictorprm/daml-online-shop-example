@@ -1,12 +1,12 @@
 [{ "name":  "PS5",
-  "inventory": 10,
   "description": "Newest game console of Sony",
   "imgUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-family-image-block-01-en-16sep20?$1600px--t$",
-  "price": 550
+  "price": 550,
+  "inventory": 10
 },
 { "name":  "PS4",
-  "inventory": 10,
   "description": "Game console of Sony",
   "imgUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-console-02-en-26oct18?$facebook$",
-  "price": 200
+  "price": 200,
+  "inventory": 10
 }]

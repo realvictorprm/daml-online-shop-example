@@ -9,7 +9,7 @@ import com.daml.ledger.api.refinements.ApiTypes.ApplicationId
 import com.daml.ledger.client.LedgerClient
 import com.daml.ledger.client.binding.{Primitive => P}
 import com.daml.ledger.client.configuration.{CommandClientConfiguration, LedgerClientConfiguration, LedgerIdRequirement}
-import com.daml.quickstart.iou.model.OnlineShop.{CreateReservationRequest, OrderRequest, Product, ProductDescription}
+import com.daml.quickstart.iou.model.OnlineShop.{CreateReservationRequest, OrderRequest, ProductInfo}
 import com.monkey.business.ClientUtil.workflowIdFromParty
 import com.monkey.business.DecodeUtil.decodeCreated
 import com.typesafe.scalalogging.StrictLogging
@@ -59,7 +59,7 @@ object IouMain extends App with StrictLogging {
   private val clientUtilF: Future[ClientUtil] =
     clientF.map(client => new ClientUtil(client, applicationId))
 
-  case class RawProduct(name: String, inventory: Int, description: String, imgUrl: String, price: Double)
+  case class RawProduct(name: String, description: String, imgUrl: String, price: Double, inventory: Int)
 
   private val rawProducts = {
     import io.circe.generic.auto._, io.circe.parser._
@@ -68,8 +68,7 @@ object IouMain extends App with StrictLogging {
   }
 
   def createProduct(product: RawProduct) =
-    List(Product(product.name, product.inventory, List.empty).create,
-      ProductDescription(product.name, product.description, product.imgUrl, product.price).create)
+      List(ProductInfo(product.name, product.description, product.imgUrl, product.price, product.inventory).create)
 
   private val offset0F = clientUtilF.flatMap(_.ledgerEnd)
 

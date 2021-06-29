@@ -9,3 +9,5 @@ projec/project
 daml.js
 scala-codegen
 !/ui/exec/build
+navigator.log
+sandbox.log

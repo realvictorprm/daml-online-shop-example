@@ -3,7 +3,6 @@
 
 import React from 'react'
 import { Icon, List } from 'semantic-ui-react'
-import { Party } from '@daml/types';
 import { OnlineShop } from '@daml.js/create-daml-app';
 
 type Props = {
@@ -15,7 +14,7 @@ type Props = {
  * React component to display a list of `User`s.
  * Every party in the list can be added as a friend.
  */
-const UserList: React.FC<Props> = ({products, onBuy}) => {
+const ProductList: React.FC<Props> = ({products, onBuy}) => {
   return (
     <List divided relaxed>
       {[...products].sort((x, y) => x.name.localeCompare(y.name)).map(product =>
@@ -44,4 +43,4 @@ const UserList: React.FC<Props> = ({products, onBuy}) => {
   );
 };
 
-export default UserList;
+export default ProductList;

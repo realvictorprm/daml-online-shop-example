@@ -1,29 +1,17 @@
 // Copyright (c) 2021 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
 // SPDX-License-Identifier: Apache-2.0
 
-import React, { useMemo } from 'react';
-import { Container, Grid, Header, Icon, Segment, Divider, List, Button, GridColumn } from 'semantic-ui-react';
-import { Party } from '@daml/types';
-// import { User } from '@daml.js/create-daml-app';
-import { useParty, useLedger, useStreamFetchByKeys, useStreamQueries } from '@daml/react';
-// import UserList from './UserList';
-// import PartyListEdit from './PartyListEdit';
+import React from 'react';
+import { Container, Grid, Header, Segment, List, Button } from 'semantic-ui-react';
+import { useParty, useLedger, useStreamQueries } from '@daml/react';
 import { OnlineShop } from '@daml.js/create-daml-app'
 import { CreateReservationRequest, Order, OrderRequest, ProductDescription, Reservation } from '@daml.js/create-daml-app/lib/OnlineShop';
-import UserList from './UserList';
+import ProductList from './ProductList';
 
 // USERS_BEGIN
 const MainView: React.FC = () => {
   const username = useParty();
   // USERS_END
-
-  // Sorted list of users that are following the current user
-  // const followers = useMemo(() =>
-  //   allUsers
-  //   .map(user => user.payload)
-  //   .filter(user => user.username !== username)
-  //   .sort((x, y) => x.username.localeCompare(y.username)),
-  //   [allUsers, username]);
 
   const ledger = useLedger();
 
@@ -53,7 +41,7 @@ const MainView: React.FC = () => {
         {`Products`}
       </Header>
       <Segment>
-        <UserList
+        <ProductList
           products={products}
           onBuy={onPutInBasket}
         />

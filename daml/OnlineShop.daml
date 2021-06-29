@@ -81,11 +81,13 @@ template ProductDescription
     name: Text
     description: Text
     imageUrl: Text
+    price: Decimal
   where
     signatory admin
     key name : Text
     maintainer admin
     observer everyone
+    ensure price > 0.0
 
 template Product
   with

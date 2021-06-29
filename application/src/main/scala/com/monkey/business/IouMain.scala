@@ -59,7 +59,7 @@ object IouMain extends App with StrictLogging {
   private val clientUtilF: Future[ClientUtil] =
     clientF.map(client => new ClientUtil(client, applicationId))
 
-  case class RawProduct(name: String, inventory: Int, description: String, imgUrl: String)
+  case class RawProduct(name: String, inventory: Int, description: String, imgUrl: String, price: Double)
 
   private val rawProducts = {
     import io.circe.generic.auto._, io.circe.parser._
@@ -69,7 +69,7 @@ object IouMain extends App with StrictLogging {
 
   def createProduct(product: RawProduct) =
     List(Product(product.name, product.inventory, List.empty).create,
-      ProductDescription(product.name, product.description, product.imgUrl).create)
+      ProductDescription(product.name, product.description, product.imgUrl, product.price).create)
 
   private val offset0F = clientUtilF.flatMap(_.ledgerEnd)
 

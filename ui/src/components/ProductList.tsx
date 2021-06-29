@@ -22,19 +22,19 @@ const ProductList: React.FC<Props> = ({products, onBuy}) => {
           <List.Icon name='gamepad' />
           <List.Content>
             <List.Header className='test-select-user-in-network'>{product.name}</List.Header>
+            <List.Content floated='right'>
+              { product.price } CHF
+            </List.Content>
             <List.Content>
               <img width="40%" src={product.imageUrl}/>
-            </List.Content>
-            <List.Description>
-              
-            </List.Description>
-            <List.Content>
-              {product.description}
             </List.Content>
             <List.Content  floated='right'>
               <Icon name="shop"
                     link
                     onClick={() => onBuy(product)}/>
+            </List.Content>
+            <List.Content>
+              {product.description}
             </List.Content>
           </List.Content>
         </List.Item>

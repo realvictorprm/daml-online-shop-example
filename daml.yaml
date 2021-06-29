@@ -15,6 +15,9 @@ dependencies:
 sandbox-options:
 - --wall-clock-time
 - --ledgerid=create-daml-app-sandbox
+json-api-options:
+- --metrics-reporter
+- prometheus://localhost:9090
 start-navigator: true
 codegen:
   js:

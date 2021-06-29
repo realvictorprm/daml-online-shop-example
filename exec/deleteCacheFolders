@@ -1,0 +1,7 @@
+#!/bin/bash
+cd $(dirname $BASH_SOURCE)
+cd ..
+rm -rf ui/node_modules
+rm -rf ui/build
+rm -f ui/package.lock.json
+rm -rf ui/daml.js

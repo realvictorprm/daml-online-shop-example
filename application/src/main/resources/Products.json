@@ -1,1003 +1,1010 @@
 [
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.755 MHz Base-/Boost-Takt (OC-Modus), 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1755 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-415_gcas_415_01_285x255.jpg",
-    "inventory": 70,
+    "inventory": 55,
     "name": " GeForce RTX 3070 ROG Strix 8G, 8192 MB GDDR6 ",
     "price": 1177.45
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.935 MHz Base-/Boost-Takt (OC-Modus), 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1935 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-403_gcas_403_01_285x255.jpg",
-    "inventory": 41,
+    "inventory": 34,
     "name": " GeForce RTX 3070 ROG Strix O8G, 8192 MB GDDR6 ",
     "price": 984.69
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.575/1.875 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,575/1,875 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-465_gcas_465_01_285x255.jpg",
-    "inventory": 27,
+    "inventory": 39,
     "name": " GeForce RTX 3070 Ti ROG Strix O8G LHR, 8192 MB GDDR6X ",
     "price": 1136.67
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.935 MHz Base-/Boost-Takt im OC-Modus, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1935 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-425_gcas_425_01_285x255.jpg",
-    "inventory": 73,
+    "inventory": 27,
     "name": " GeForce RTX 3080 ROG Strix O10G White, 10240 MB GDDR6X ",
     "price": 1719.67
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.785 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,785 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-456_gcas_456_01_285x255.jpg",
-    "inventory": 76,
-    "name": " GeForce RTX 3080 Ti TUF O12G LHR, 12288 MB GDDR6X ",
+    "inventory": 22,
+    "name": " GeForce RTX 3080 Ti TUF O12G, 12288 MB GDDR6X ",
     "price": 2045.1
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.395/1.770 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1395/1770 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-395_gcas_395_01_285x255.jpg",
-    "inventory": 48,
+    "inventory": 63,
     "name": " GeForce RTX 3090 TUF Gaming O24G, 24576 MB GDDR6X ",
     "price": 2466.65
   },
   {
-    "description": " NVIDIA GeForce RTX 3060 Grafikkarte, mit 1.320/1.867 MHz Base-/Boost-Takt, 12 GB GDDR6 VRAM mit 15 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign, mit RGB-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3060 Graphics Card, With 1,320/1,867 MHz Base/Boost Clock Speed, 12 GB GDDR6 VRAM with 15 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-378_gcgb_378_01_285x255.jpg",
-    "inventory": 37,
+    "inventory": 50,
     "name": " Aorus GeForce RTX 3060 Elite 12G, 12288 MB GDDR6 ",
-    "price": 792.76
+    "price": 688.93
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.845 MHz Base-/Boost-Takt, 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1845 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-343_gcgb_343_01_285x255.jpg",
-    "inventory": 54,
+    "inventory": 40,
     "name": " Aorus GeForce RTX 3070 Master 8G, 8192 MB GDDR6 ",
     "price": 1077.31
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.875 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,875 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-405_gcgb_405_01_285x255.jpg",
-    "inventory": 91,
+    "inventory": 58,
     "name": " Aorus GeForce RTX 3070 Ti Master 8G LHR, 8192 MB GDDR6X ",
     "price": 1074.72
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.845 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1845 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-366_gcgb_366_01_285x255.jpg",
-    "inventory": 54,
+    "inventory": 27,
     "name": " Aorus GeForce RTX 3080 Master 10G (rev. 2.0), 10240 MB GDDR6X ",
     "price": 1753.91
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.770 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,770 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-391_gcgb_391_01_285x255.jpg",
-    "inventory": 53,
+    "inventory": 81,
     "name": " Aorus GeForce RTX 3080 Ti Master 12G LHR, 12288 MB GDDR6X ",
     "price": 2048.34
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.905 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1905 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-333_gcgb_333_01_285x255.jpg",
-    "inventory": 3,
+    "inventory": 38,
     "name": " Aorus GeForce RTX 3080 Xtreme 10G, 10240 MB GDDR6X ",
     "price": 1786.78
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.845 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Integrierter Wasserkühler mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1845 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Integrated Water Block with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-352_gcgb_352_01_285x255.jpg",
-    "inventory": 14,
+    "inventory": 56,
     "name": " Aorus GeForce RTX 3080 Xtreme Waterforce WB 10G, 10240 MB GDDR6X ",
     "price": 1842.31
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.400/1.860 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1400/1860 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-335_gcgb_335_01_285x255.jpg",
-    "inventory": 5,
+    "inventory": 54,
     "name": " Aorus GeForce RTX 3090 Xtreme 24G, 24576 MB GDDR6X ",
-    "price": 3013.56
+    "price": 2866.96
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.400/1.785 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Integrierter Wasserkühler mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1400/1785 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Integrated Water Block with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-355_gcgb_355_01_285x255.jpg",
-    "inventory": 4,
+    "inventory": 7,
     "name": " Aorus GeForce RTX 3090 Xtreme Waterforce WB 24G, 24576 MB GDDR6X ",
     "price": 2625.29
   },
   {
     "description": " NVIDIA GeForce GTX 1650-Grafikkarte von Gigabyte, mit 1.410/1.1.650 MHz Base-/Boost-Takt, 4 GB GDDR6-VRAM mit 12 GHz RAM-Takt (effektiv), effektives Dual-Fan-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-380_gcgb_380_01_285x255.jpg",
-    "inventory": 40,
+    "inventory": 77,
     "name": " GeForce GTX 1650 D6 WindForce OC 4G, 4096 MB GDDR6 ",
     "price": 299.43
   },
   {
-    "description": " NVIDIA GeForce GTX 1660-Grafikkarte von Gigabyte, mit 1530/1830 MHz Base-/Boost-Takt, 6 GB GDDR5-VRAM mit 8 GHz RAM-Takt (effektiv), Dual-Fan-Kühlerdesign ",
+    "description": " NVIDIA GeForce GTX 1660 graphics card from Gigabyte, 1530/1830 MHz Base-/Boost Clock, 6 GB GDDR5-VRAM with 8 GHz VRAM (effective), Dual-fan cooler design ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-273_gcgb_273_01_285x255.jpg",
-    "inventory": 54,
+    "inventory": 10,
     "name": " GeForce GTX 1660 OC 6G, 6144 MB GDDR5 ",
     "price": 403.79
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.770 MHz Base-/Boost-Takt, 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1770 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-339_gcgb_339_01_285x255.jpg",
-    "inventory": 83,
+    "inventory": 41,
     "name": " GeForce RTX 3070 Eagle OC 8G, 8192 MB GDDR6 ",
     "price": 1131.51
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.815 MHz Base-/Boost-Takt, 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1815 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-338_gcgb_338_01_285x255.jpg",
-    "inventory": 0,
+    "inventory": 48,
     "name": " GeForce RTX 3070 Gaming OC 8G, 8192 MB GDDR6 ",
     "price": 1013.53
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.830 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,830 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-396_gcgb_396_01_285x255.jpg",
-    "inventory": 70,
+    "inventory": 55,
     "name": " GeForce RTX 3070 Ti Gaming OC 8G LHR, 8192 MB GDDR6X ",
     "price": 974.61
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.800 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1800 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-327_gcgb_327_01_285x255.jpg",
-    "inventory": 17,
+    "inventory": 88,
     "name": " GeForce RTX 3080 Gaming OC 10G, 10240 MB GDDR6X ",
     "price": 1417.52
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.710 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,710 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-392_gcgb_392_01_285x255.jpg",
-    "inventory": 37,
+    "inventory": 83,
     "name": " GeForce RTX 3080 Ti Gaming OC 12G LHR, 12288 MB GDDR6X ",
     "price": 1998.92
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.710 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,710 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-393_gcgb_393_01_285x255.jpg",
-    "inventory": 0,
+    "inventory": 83,
     "name": " GeForce RTX 3080 Ti Vision OC 12G LHR, 12288 MB GDDR6X ",
     "price": 2028.23
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.800 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1800 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-332_gcgb_332_01_285x255.jpg",
-    "inventory": 50,
+    "inventory": 24,
     "name": " GeForce RTX 3080 Vision OC 10G, 10240 MB GDDR6X ",
     "price": 1783.94
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.400/1.755 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1400/1755 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-328_gcgb_328_01_285x255.jpg",
-    "inventory": 57,
+    "inventory": 68,
     "name": " GeForce RTX 3090 Gaming OC 24G, 24576 MB GDDR6X ",
     "price": 2479.35
   },
   {
-    "description": " NVIDIA GeForce RTX 3060 Ti Grafikkarte, mit 1.410/1.725 MHz Base-/Boost-Takt, 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Dual-Fan-Kühlerdesign mit roter LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3060 Ti Graphics Card, With 1,410/1,725 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with Red LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-206_gci3_206_01_285x255.jpg",
-    "inventory": 8,
+    "inventory": 52,
     "name": " GeForce RTX 3060 Ti iChill X3 Red LHR, 8192 MB GDDR6 ",
     "price": 802.08
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.785 MHz Base-/Boost-Takt, 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1785 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Triple Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-173_gci3_173_01_285x255.jpg",
-    "inventory": 68,
+    "inventory": 77,
     "name": " GeForce RTX 3070 iChill X4, 8192 MB GDDR6 ",
     "price": 1252.77
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.830 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,830 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-194_gci3_194_01_285x255.jpg",
-    "inventory": 1,
+    "inventory": 60,
     "name": " GeForce RTX 3070 Ti iChill X4 LHR, 8192 MB GDDR6X ",
     "price": 973.57
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.785 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,785 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-204_gci3_204_01_285x255.jpg",
-    "inventory": 30,
+    "inventory": 83,
     "name": " GeForce RTX 3070 Ti X3 OC LHR, 8192 MB GDDR6X ",
     "price": 976.25
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.725 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1725 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-170_gci3_170_01_285x255.jpg",
-    "inventory": 82,
+    "inventory": 65,
     "name": " GeForce RTX 3080 iChill X3, 10240 MB GDDR6X ",
     "price": 1690.36
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.710 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,710 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-190_gci3_190_01_285x255.jpg",
-    "inventory": 12,
+    "inventory": 49,
     "name": " GeForce RTX 3080 Ti iChill X4 LHR, 12288 MB GDDR6X ",
     "price": 1728.18
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.400/1.755 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), vorinstallierter Wasserkühler mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1400/1755 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Pre-installed water block with RGB-LED lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-178_gci3_178_01_285x255.jpg",
-    "inventory": 12,
+    "inventory": 90,
     "name": " GeForce RTX 3090 iChill Frostbite, 24576 MB GDDR6X ",
     "price": 2673.7
   },
   {
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1400/1755 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gci3-167_gci3_167_01_285x255.jpg",
+    "inventory": 61,
+    "name": " GeForce RTX 3090 iChill X4, 24576 MB GDDR6X ",
+    "price": 2571.62
+  },
+  {
     "description": " NVIDIA GeForce RTX 2060 Grafikkarte von MSI, mit 1.365/1.710 MHz Base-/Boost-Takt, 6 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Dual-Fan-Kühlerdesign mit Backplate ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-277_gcmc_277_01_285x255.jpg",
-    "inventory": 21,
+    "inventory": 38,
     "name": " GeForce RTX 2060 Ventus GP 6G OC, 6144 MB GDDR6 ",
     "price": 467.13
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.830 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,830 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-285_gcmc_285_01_285x255.jpg",
-    "inventory": 30,
+    "inventory": 45,
     "name": " GeForce RTX 3070 Ti Gaming X Trio 8G LHR, 8192 MB GDDR6X ",
     "price": 990.49
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.875 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,875 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-284_gcmc_284_01_285x255.jpg",
-    "inventory": 22,
+    "inventory": 66,
     "name": " GeForce RTX 3070 Ti Suprim X 8G LHR, 8192 MB GDDR6X ",
     "price": 1075.56
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.905 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-253_gcmc_253_01_285x255.jpg",
-    "inventory": 77,
-    "name": " GeForce RTX 3080 Suprim X 10G, 10240 MB GDDR6X ",
-    "price": 1466.96
-  },
-  {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.770 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,770 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-281_gcmc_281_01_285x255.jpg",
-    "inventory": 27,
+    "inventory": 6,
     "name": " GeForce RTX 3080 Ti Gaming X Trio 12G, 12288 MB GDDR6X ",
     "price": 2033.44
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.400/1.785 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1400/1785 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-244_gcmc_244_01_285x255.jpg",
-    "inventory": 90,
+    "inventory": 66,
     "name": " GeForce RTX 3090 Gaming X Trio 24G, 24576 MB GDDR6X ",
     "price": 2337.24
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.395/1.875 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-252_gcmc_252_01_285x255.jpg",
-    "inventory": 23,
-    "name": " GeForce RTX 3090 Suprim X 24G, 24576 MB GDDR6X ",
-    "price": 2432.25
-  },
-  {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.710 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1710 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcpn-076_gcpn_076_01_285x255.jpg",
-    "inventory": 78,
-    "name": " GeForce RTX 3080 XLR8 Gaming Revel EPIC-X RGB, 10240 MB GDDR6X ",
+    "inventory": 71,
+    "name": " GeForce RTX 3080 XLR8 Gaming EPIC-X RGB, 10240 MB GDDR6X ",
     "price": 1599.99
   },
   {
     "description": " NVIDIA GeForce GTX 1660 Super Gaming-Grafikkarte von Hersteller, mit 1530/1785 MHz Base-/Boost-Takt, 6 GB GDDR6-VRAM mit 14 GHz RAM-Takt (effektiv), Dual-Fan-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-156_gczt_156_01_285x255.jpg",
-    "inventory": 18,
+    "inventory": 6,
     "name": " GAMING GeForce GTX 1660 Super Twin Fan, 6144 MB GDDR6 ",
     "price": 452.94
   },
   {
     "description": " NVIDIA GeForce RTX 2060 Grafikkarte, mit 1.365/1.680 MHz Base-/Boost-Takt, 6 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Dual-Fan-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-177_gczt_177_01_285x255.jpg",
-    "inventory": 34,
+    "inventory": 98,
     "name": " GAMING GeForce RTX 2060, 6144 MB GDDR6 ",
     "price": 621.7
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Grafikkarte, mit 1.500/1.785 MHz Base-/Boost-Takt, 8 GB GDDR6 VRAM mit 14 GHz RAM-Takt (effektiv), Dual-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1785 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Dual Fan Cooling Design with RGB-LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-172_gczt_172_01_285x255.jpg",
-    "inventory": 71,
+    "inventory": 49,
     "name": " GAMING GeForce RTX 3070 AMP! Holo, 8192 MB GDDR6 ",
     "price": 1098.1
   },
   {
-    "description": " NVIDIA GeForce RTX 3070 Ti Grafikkarte, mit 1.580/1.830 MHz Base-/Boost-Takt, 8 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Ti Graphics Card, With 1,580/1,830 MHz Base/Boost Clock Speed, 8 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-184_gczt_184_01_285x255.jpg",
-    "inventory": 24,
+    "inventory": 50,
     "name": " GAMING GeForce RTX 3070 Ti AMP! Holo LHR, 8192 MB GDDR6X ",
     "price": 1105.38
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Grafikkarte, mit 1.440/1.770 MHz Base-/Boost-Takt, 10 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3070 Graphics Card, With 1500/1755 MHz Base/Boost Clock Speed, 8 GB GDDR6 VRAM with 14 GHz RAM Clock (effectively), Dual Fan Cooling Design with White LED Lighting ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-168_gczt_168_01_285x255.jpg",
+    "inventory": 18,
+    "name": " GAMING GeForce RTX 3070 Twin Edge OC, 8192 MB GDDR6 ",
+    "price": 1013.48
+  },
+  {
+    "description": " NVIDIA GeForce RTX 3080 Graphics Card, With 1440/1770 MHz Base/Boost Clock Speed, 10 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-166_gczt_166_01_285x255.jpg",
-    "inventory": 42,
+    "inventory": 16,
     "name": " GAMING GeForce RTX 3080 AMP Holo, 10240 MB GDDR6X ",
     "price": 1477.11
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.710 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,710 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-180_gczt_180_01_285x255.jpg",
-    "inventory": 67,
+    "inventory": 74,
     "name": " GAMING GeForce RTX 3080 Ti AMP! Holo, 12288 MB GDDR6X ",
     "price": 1886.67
   },
   {
-    "description": " NVIDIA GeForce RTX 3080 Ti-Grafikkarte, mit 1.365/1.665 MHz Base-/Boost-Takt, 12 GB GDDR6X VRAM mit 19 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3080 Ti Graphics Card, With 1,365/1,665 MHz Base/Boost Clock Speed, 12 GB GDDR6X VRAM with 19 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-182_gczt_182_01_285x255.jpg",
-    "inventory": 21,
+    "inventory": 63,
     "name": " GAMING GeForce RTX 3080 Ti Trinity, 12288 MB GDDR6X ",
     "price": 1712.17
   },
   {
-    "description": " NVIDIA GeForce RTX 3090 Grafikkarte, mit 1.395/1.710 MHz Base-/Boost-Takt, 24 GB GDDR6X VRAM mit 19,5 GHz RAM-Takt (effektiv), Triple-Fan-Kühlerdesign mit RGB-LED-Beleuchtung ",
+    "description": " NVIDIA GeForce RTX 3090 Graphics Card, With 1395/1710 MHz Base/Boost Clock Speed, 24 GB GDDR6X VRAM with 19,5 GHz RAM Clock (Effectiv), Triple Fan Cooling Design with RGB LED Lighting ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gczt-173_gczt_173_01_285x255.jpg",
-    "inventory": 14,
+    "inventory": 47,
     "name": " GAMING GeForce RTX 3090 Trinity OC, 24576 MB GDDR6X ",
     "price": 2392.36
   },
   {
     "description": " Leistungsstarke Workstation-Grafikkarte von AMD, max. 1.500 MHz GPU-Boost-Takt, 16 GB HBM2 Speicher, 6× Min-DisplayPort 1.4, luftgekühlt mit Radiallüfter ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcam-008_gcam_008_1g_285x255.jpg",
-    "inventory": 22,
+    "inventory": 46,
     "name": " Radeon Pro WX 9100, 16384 MB HBM2, 6x mini DP ",
     "price": 1871.01
   },
   {
     "description": " Gaming-Grafikkarte von ASUS, Radeon RX 5500 XT EVO OC, max. 1.865 MHz GPU-Boost-Takt im OC-Modus, 4 GB GDDR6-Speicher, 3x DisplayPort 1.4 / 1x HDMI, Dual-Lüfter-Kühlerdesign mit RGB-Beleuchtung ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-362_gcas_362_01_285x255.jpg",
-    "inventory": 98,
+    "inventory": 24,
     "name": " Radeon RX 5500 XT EVO OC Edition, 4196 MB GDDR6 ",
     "price": 216.86
   },
   {
     "description": " Polaris Refresh: AMD Radeon RX 570 Grafikkarte,1.310 MHz OC-Takt, STRIX Dual-Fan-Kühler, RGB-Beleuchtung & Backplate, 8 GB GDDR5 Videospeicher ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-402_gcas_402_01_285x255.jpg",
-    "inventory": 95,
+    "inventory": 50,
     "name": " Radeon RX 570 ROG Strix OC, 8192 MB GDDR5 ",
     "price": 240.68
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.581 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2.581 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Dual Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-453_gcas_453_01_285x255.jpg",
-    "inventory": 48,
+    "inventory": 0,
     "name": " Radeon RX 6700 XT Dual 12G, 12288 MB GDDR6 ",
     "price": 748.07
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.622 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,622 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-448_gcas_448_01_285x255.jpg",
-    "inventory": 93,
+    "inventory": 99,
     "name": " Radeon RX 6700 XT ROG Strix O12G, 12288 MB GDDR6 ",
     "price": 892.35
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.622 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,622 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-449_gcas_449_01_285x255.jpg",
-    "inventory": 35,
+    "inventory": 2,
     "name": " Radeon RX 6700 XT TUF O12G, 12288 MB GDDR6 ",
     "price": 789.64
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 2.190 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-419_gcas_419_01_285x255.jpg",
-    "inventory": 78,
+    "inventory": 19,
     "name": " Radeon RX 6800 ROG Strix O16G, 16384 MB GDDR6 ",
     "price": 1156.31
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 1.980 MHz GPU-Boost-Takt (OC-Modus), 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-418_gcas_418_01_285x255.jpg",
-    "inventory": 84,
+    "inventory": 89,
     "name": " Radeon RX 6800 TUF O16G, 16384 MB GDDR6 ",
     "price": 1094.69
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, RX 6800 XT im Custom-Design, max. 2.360 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, mit AiO-Wasserkühlung ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,360 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB Infinity Cache, 2x DisplayPort 1.4a / 1x HDMI 2.1 / 1x USB-C, Single... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-416_gcas_416_01_285x255.jpg",
-    "inventory": 18,
+    "inventory": 53,
     "name": " Radeon RX 6800 XT ROG Strix LC O16G, 16384 MB GDDR6 ",
     "price": 1392.68
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, RX 6800 XT im Custom-Design, max. 2.340 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,340 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-417_gcas_417_01_285x255.jpg",
-    "inventory": 55,
+    "inventory": 18,
     "name": " Radeon RX 6800 XT TUF O16G, 16384 MB GDDR6 ",
     "price": 1259.63
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.365 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 1x HDMI 2.1 /... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6900 XT, max. 2,365MHz boost clock speed, 16GB GDDR6 VRAM with 128MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Radial-fan cooling... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-421_gcas_421_01_285x255.jpg",
-    "inventory": 20,
+    "inventory": 51,
     "name": " Radeon RX 6900 XT ROG Strix LC O16G, 16384 MB GDDR6 ",
     "price": 1918.14
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.340 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcas-420_gcas_420_01_285x255.jpg",
-    "inventory": 80,
+    "inventory": 72,
     "name": " Radeon RX 6900 XT TUF O16G, 16384 MB GDDR6 ",
     "price": 1750.2
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.622 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,622 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-377_gcgb_377_01_285x255.jpg",
-    "inventory": 24,
+    "inventory": 80,
     "name": " Aorus Radeon RX 6700 XT Elite 12G, 12288 MB GDDR6 ",
     "price": 895.17
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 2.190 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800, max. 2,190 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan cooling... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-363_gcgb_363_01_285x255.jpg",
-    "inventory": 65,
+    "inventory": 63,
     "name": " Aorus Radeon RX 6800 Master 16G, 16384 MB GDDR6 ",
     "price": 966.05
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.310 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,310 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-362_gcgb_362_01_285x255.jpg",
-    "inventory": 1,
+    "inventory": 50,
     "name": " Aorus Radeon RX 6800 XT Master 16G, 16384 MB GDDR6 ",
     "price": 1082.09
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.310 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 1x DisplayPort 1.4a / 2x HDMI 2.1 / 1x USB-C... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,310 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 1x DisplayPort 1.4a / 2x HDMI 2.1 / 1x USB-C,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-361_gcgb_361_01_285x255.jpg",
-    "inventory": 35,
+    "inventory": 14,
     "name": " Aorus Radeon RX 6800 XT Master Type C 16G, 16384 MB GDDR6 ",
     "price": 1351.99
   },
   {
     "description": " Gaming-Grafikkarte Radeon RX 5500 XT von Gigabyte, max. 1.845 MHz GPU-Boost-Takt, 8 GB GDDR6-Speicher, 3x DisplayPort 1.4 / 1x HDMI, Triple-Lüfter-Kühlerdesign mit RGB-Beleuchtung ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-315_gcgb_315_01_285x255.jpg",
-    "inventory": 59,
+    "inventory": 27,
     "name": " Radeon RX 5500 XT Gaming OC 8G, 8192 MB GDDR6 ",
     "price": 270.5
   },
   {
     "description": " Gaming-Grafikkarte Radeon RX 5500 XT von Gigabyte, max. 1.845 MHz GPU-Boost-Takt, 4 GB GDDR6-Speicher, 3x DisplayPort 1.4 / 1x HDMI, Dual-Lüfter-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-318_gcgb_318_01_285x255.jpg",
-    "inventory": 38,
+    "inventory": 9,
     "name": " Radeon RX 5500 XT OC 4G, 4096 MB GDDR6 ",
     "price": 211.2
   },
   {
     "description": " Gaming-Grafikkarte Radeon RX 5500 XT von Gigabyte, max. 1.845 MHz GPU-Boost-Takt, 8 GB GDDR6-Speicher, 3x DisplayPort 1.4 / 1x HDMI, Dual-Lüfter-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-316_gcgb_316_01_285x255.jpg",
-    "inventory": 21,
+    "inventory": 90,
     "name": " Radeon RX 5500 XT OC 8G, 8192 MB GDDR6 ",
     "price": 248.47
   },
   {
     "description": " High-End-Gaming-Grafikkarte von Gigabyte, Radeon RX 5600 XT, max. 1620 MHz GPU-Boost-Takt, 6 GB GDDR6-Speicher, 3x DisplayPort 1.4 / 1x HDMI, Duallüfter-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-323_gcgb_323_01_285x255.jpg",
-    "inventory": 54,
+    "inventory": 29,
     "name": " Radeon RX 5600 XT Windforce OC 6G, 6144 MB GDDR6 ",
     "price": 338.02
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.581 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2.581 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Dual Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-376_gcgb_376_01_285x255.jpg",
-    "inventory": 37,
+    "inventory": 95,
     "name": " Radeon RX 6700 XT 12G, 12288 MB GDDR6 ",
     "price": 778.32
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.581 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,581 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-375_gcgb_375_01_285x255.jpg",
-    "inventory": 28,
+    "inventory": 56,
     "name": " Radeon RX 6700 XT Eagle 12G, 12288 MB GDDR6 ",
     "price": 827.2
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.622 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,622 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-374_gcgb_374_01_285x255.jpg",
-    "inventory": 46,
+    "inventory": 51,
     "name": " Radeon RX 6700 XT Gaming OC 12G, 12288 MB GDDR6 ",
     "price": 867.27
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 2.155 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800, max. 2,155 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan cooling... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-358_gcgb_358_01_285x255.jpg",
-    "inventory": 51,
+    "inventory": 43,
     "name": " Radeon RX 6800 Gaming OC 16G, 16384 MB GDDR6 ",
     "price": 1202.09
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.250 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,250 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD AMD Infinity Cache, 2x DisplayPort 1.4a / 1x HDMI 2.1 / 1x USB-C,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-357_gcgb_357_01_285x255.jpg",
-    "inventory": 56,
+    "inventory": 91,
     "name": " Radeon RX 6800 XT 16G, 16384 MB GDDR6 ",
     "price": 996.42
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.285 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,285 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-356_gcgb_356_01_285x255.jpg",
-    "inventory": 40,
+    "inventory": 29,
     "name": " Radeon RX 6800 XT Gaming OC 16G, 16384 MB GDDR6 ",
     "price": 1036.53
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.250 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 1x HDMI 2.1 /... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6900 XT, max. 2,250 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-364_gcgb_364_01_285x255.jpg",
-    "inventory": 84,
+    "inventory": 70,
     "name": " Radeon RX 6900 XT, 16384 MB GDDR6 ",
     "price": 1451.98
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.285 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6900 XT, max. 2,285 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-368_gcgb_368_01_285x255.jpg",
-    "inventory": 61,
+    "inventory": 32,
     "name": " Radeon RX 6900 XT Gaming OC 16G, 16384 MB GDDR6 ",
     "price": 1542.78
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.365 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6900 XT, max. 2,285 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 2x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcgb-381_gcgb_381_01_285x255.jpg",
-    "inventory": 36,
+    "inventory": 73,
     "name": " Radeon RX 6900 XT Master 16G, 16384 MB GDDR6 ",
     "price": 1642.25
   },
   {
     "description": " High-End-Gaming-Grafikkarte von MSI, Radeon RX 5500 XT im Referenz-Design, max. 1.845 MHz GPU-Boost-Takt, 8 GB GDDR6-Speicher, 3x DisplayPort 1.4 / 1x HDMI, Dual-Lüfter-Kühlerdesign ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-236_gcmc_236_01_285x255.jpg",
-    "inventory": 67,
+    "inventory": 80,
     "name": " Radeon RX 5500 XT Gaming X, 8192 MB GDDR6 ",
     "price": 329.26
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. TBD MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. TBD MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Dual Fan cooling... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-269_gcmc_269_01_285x255.jpg",
-    "inventory": 82,
+    "inventory": 38,
     "name": " Radeon RX 6700 XT Gaming X 12G, 12288 MB GDDR6 ",
     "price": 807.63
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.620 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,620 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Dual Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-270_gcmc_270_01_285x255.jpg",
-    "inventory": 70,
+    "inventory": 45,
     "name": " Radeon RX 6700 XT Mech 2X 12G OC, 12288 MB GDDR6 ",
     "price": 787.07
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 2.155 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800, max. 2,155 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan cooling... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-258_gcmc_258_01_285x255.jpg",
-    "inventory": 69,
+    "inventory": 49,
     "name": " Radeon RX 6800 Gaming X Trio 16G, 16384 MB GDDR6 ",
     "price": 1133.56
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.285 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,285 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-257_gcmc_257_01_285x255.jpg",
-    "inventory": 37,
+    "inventory": 42,
     "name": " Radeon RX 6800 XT Gaming X Trio 16G, 16384 MB GDDR6 ",
     "price": 1546.57
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.340 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6900 XT, max. 2,340 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-262_gcmc_262_01_285x255.jpg",
-    "inventory": 58,
+    "inventory": 94,
     "name": " Radeon RX 6900 XT Gaming X Trio 16G, 16384 MB GDDR6 ",
     "price": 1704.65
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.425 MHz GPU-Boost-Takt im OC-Modus, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6900 XT, max. 2,425 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcmc-279_gcmc_279_01_285x255.jpg",
-    "inventory": 84,
+    "inventory": 90,
     "name": " Radeon RX 6900 XT Gaming Z Trio 16G, 16384 MB GDDR6 ",
     "price": 2053.31
   },
   {
     "description": " Workstation Grafikkarte für Multi-Display-Anwendungen mit 6x Mini-DisplaPort, bis zu 6x 4K @60Hz möglich, Single-Slot-Desing und Stromverbrauch <50 Watt ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-175_gcsp_175_1g_285x255.jpg",
-    "inventory": 86,
+    "inventory": 64,
     "name": " GPRO 6200, 4096 MB GDDR5, 6x mini DP ",
     "price": 249.9
   },
   {
     "description": " High-End-Gaming-Grafikkarte von Sapphire, max. 1.845 MHz GPU-Boost-Takt & Dual-BIOS, 8 GB GDDR6-Speicher, 2x DisplayPort 1.4 / 2x HDMI, Dual-Lüfter-Kühlerdesign mit RGB-Beleuchtung ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-206_gcsp_206_01_285x255.jpg",
-    "inventory": 79,
+    "inventory": 59,
     "name": " Nitro+ Radeon RX 5500 XT 8G Special Edition, 8192 MB GDDR6 ",
     "price": 297.59
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.622 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,622 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-219_gcsp_219_01_285x255.jpg",
-    "inventory": 48,
+    "inventory": 80,
     "name": " Nitro+ Radeon RX 6700 XT Gaming OC 12G, 12288 MB GDDR6 ",
     "price": 816.74
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 2.190 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-216_gcsp_216_01_285x255.jpg",
-    "inventory": 42,
+    "inventory": 51,
     "name": " Nitro+ Radeon RX 6800 OC 16G, 16384 MB GDDR6 ",
     "price": 1034.59
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.360 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,360 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-215_gcsp_215_01_285x255.jpg",
-    "inventory": 85,
+    "inventory": 58,
     "name": " Nitro+ Radeon RX 6800 XT OC 16G, 16384 MB GDDR6 ",
     "price": 1023.22
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.360 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 1x HDMI 2.1 / USB-C,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,360 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 2x DisplayPort 1.4a / 1x HDMI 2.1 / 1x USB C,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-214_gcsp_214_01_285x255.jpg",
-    "inventory": 42,
+    "inventory": 86,
     "name": " Nitro+ Radeon RX 6800 XT OC SE 16G, 16384 MB GDDR6 ",
     "price": 1044.97
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.285 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a & 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-218_gcsp_218_01_285x255.jpg",
-    "inventory": 33,
+    "inventory": 43,
     "name": " Nitro+ Radeon RX 6900 XT 16G, 16384 MB GDDR6 ",
     "price": 1430.23
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.65 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a & 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-222_gcsp_222_01_285x255.jpg",
-    "inventory": 59,
+    "inventory": 32,
     "name": " Nitro+ Radeon RX 6900 XT Special Edition, 16384 MB GDDR6 ",
     "price": 1694.36
   },
   {
-    "description": " Mittelklasse-Gaming-Grafikkarte, Radeon RX 6700 XT im Custom-Design, max. 2.581 MHz GPU-Boost-Takt, 12 GB GDDR6-Speicher mit 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " Mid-class gaming graphics card, Custom design Radeon RX 6700 XT, max. 2,581 MHz boost clock speed, 12 GB GDDR6 VRAM with 96 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Dual Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-220_gcsp_220_01_285x255.jpg",
-    "inventory": 3,
+    "inventory": 70,
     "name": " Pulse Radeon RX 6700 XT Gaming 12G, 12288 MB GDDR6 ",
     "price": 759.73
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 im Custom-Design, max. 2.170 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-217_gcsp_217_01_285x255.jpg",
-    "inventory": 10,
+    "inventory": 43,
     "name": " Pulse Radeon RX 6800 OC 16G, 16384 MB GDDR6 ",
     "price": 987.57
   },
   {
-    "description": " High-End-Gaming-Grafikkarte, Radeon RX 6800 XT im Custom-Design, max. 2.310 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1,... ",
+    "description": " High-end gaming graphics card, Custom design Radeon RX 6800 XT, max. 2,310 MHz boost clock speed, 16 GB GDDR6 VRAM with 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a / 1x HDMI 2.1, Triple Fan... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-223_gcsp_223_01_285x255.jpg",
-    "inventory": 41,
+    "inventory": 44,
     "name": " Pulse Radeon RX 6800 XT Gaming OC 16G, 16384 MB GDDR6 ",
     "price": 1267.31
   },
   {
     "description": " High-End-Gaming-Grafikkarte, Radeon RX 6900 XT im Custom-Design, max. 2.365 MHz GPU-Boost-Takt, 16 GB GDDR6-Speicher mit 128 MB AMD Infinity Cache, 3x DisplayPort 1.4a & 1x HDMI 2.1,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gcsp-221_gcsp_221_01_285x255.jpg",
-    "inventory": 63,
+    "inventory": 13,
     "name": " Toxic Radeon RX 6900 XT Extreme Edition, 16384 MB GDDR6 ",
     "price": 1999
   },
   {
-    "description": " Modularer Big-Tower in Schwarz-Silber von be quiet! mit Dämmung, Hartglas-Seitenfenster, 4-Pin-PWM-Hub für bis zu... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-030_gebq_030_01_285x255.jpg",
-    "inventory": 3,
-    "name": " Dark Base Pro 900 Silver rev. 2 Big-Tower -... ",
-    "price": 259.9
-  },
-  {
-    "description": " Schwarz-weißer Corsair-Big-Tower mit Window, 3 vorinstallierten Lüftern, modularen HDD-Cages & zahlreichen... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-052_gecs_052_1g_285x255.jpg",
-    "inventory": 27,
-    "name": " Graphite 760T V2 Big-Tower - schwarz/weiß Window ",
-    "price": 199.9
-  },
-  {
-    "description": " Schwarzer Big-Tower (XL-ATX) mit beleuchteten 140er-Lüftern, 360er-Radiator-Mountings, Lüftersteuerung & Window ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-031_gecs_031_1g_285x255.jpg",
-    "inventory": 78,
-    "name": " Graphite 780T Big-Tower - schwarz ",
-    "price": 199.9
-  },
-  {
-    "description": " PREMIUM-Schalldämmung vorinstalliert! Vom King-Mod-Service modifiziertes Corsair Obsidian 750D in Schwarz mit Window ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geck-275_geck_275_1g_285x255.jpg",
-    "inventory": 43,
-    "name": " Corsair Obsidian 750D Big-Tower, schwarz Window -... ",
-    "price": 199.9
-  },
-  {
-    "description": " Big-Tower von Fractal Design in Schwarz, für Mainboards bis EE-ATX, mit Schalldämmung & Staubfiltern, hohe Luft-... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-120_gefd_120_01_285x255.jpg",
-    "inventory": 72,
-    "name": " Define 7 XL Black Big-Tower - gedämmt, schwarz ",
-    "price": 229.9
-  },
-  {
-    "description": " Sehr edles und leises Big-Tower Gehäuse in Schwarz und Titanium mit Schalldämmung, Wakü-Optionen & Spezial-Filtern ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-001_gefd_001_1g_285x255.jpg",
-    "inventory": 75,
-    "name": " Define XL R2 Big-Tower - schwarz ",
+    "description": " Kompaktes Gehäuse mit Aluminium-Hülle, im ASUS-ROG-Design, für Mini-ITX und Mini-DTX, 1x 240 mm Radiator möglich,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geas-020_geas_020_01_285x255.jpg",
+    "inventory": 52,
+    "name": " ROG Z11 Mini-ITX-Gehäuse, Tempered Glass - schwarz ",
     "price": 149.9
   },
   {
-    "description": " Sehr edles und leises Big-Tower Gehäuse in Schwarz und Titanium mit Schalldämmung, Wakü-Optionen & Spezial-Filtern ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-002_gefd_002_1g_285x255.jpg",
-    "inventory": 34,
-    "name": " Define XL R2 Big-Tower - titanium ",
-    "price": 149.9
-  },
-  {
-    "description": " Edler und modularer Big-Tower, feine Mesh-Front für guten Airflow, Radiatoren bis zu 360 mm in der Front, max.... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-136_gefd_136_01_285x255.jpg",
-    "inventory": 33,
-    "name": " Meshify 2 XL Black TG Dark Tint ",
-    "price": 224.9
-  },
-  {
-    "description": " Spektakulärer Big-Tower mit ausfahrbarem Deckel, adressierbare RGB-Beleuchtung, 4x 2,5/3,5\" & 9x 2,5\"-Laufwerke,... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geiw-132_geiw_132_015b7bb2fa57609_285x255.jpg",
-    "inventory": 73,
-    "name": " 915 Big-Tower, Tempered Glass - schwarz ",
-    "price": 499.9
-  },
-  {
-    "description": " Showcase-Gehäuse aus Aluminium von Jonsbo, Open-Frame-Design mit futuristischem Look, Seitenteile aus Tempered Glass,... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-011_gejb_011_01_285x255.jpg",
-    "inventory": 41,
-    "name": " MOD3 Big-Tower Showcase, Tempered Glass - grau ",
-    "price": 279.9
-  },
-  {
-    "description": " Showcase-Gehäuse aus Aluminium von Jonsbo, Open-Frame-Design mit futuristischem Look, Seitenteile aus Tempered Glass,... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-066_gejb_066_01_285x255.jpg",
-    "inventory": 35,
-    "name": " MOD3 Big-Tower Showcase, Tempered Glass - schwarz ",
-    "price": 279.9
-  },
-  {
-    "description": " Showcase-Gehäuse aus Aluminium von Jonsbo, Open-Frame-Design mit futuristischem Look, Seitenteile aus Tempered Glass,... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-010_gejb_010_01_285x255.jpg",
-    "inventory": 97,
-    "name": " MOD3 Big-Tower Showcase, Tempered Glass - weiß ",
-    "price": 279.9
-  },
-  {
-    "description": " Imposanter Showcase-Big-Tower, mit getöntem Tempered Glass, für Mainboards bis E-ATX, Grafikkarten bis 400 mm, bis zu... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-060_gejb_060_01_285x255.jpg",
-    "inventory": 64,
-    "name": " MOD5 Big-Tower Showcase, Tempered Glass - grau ",
-    "price": 349.9
-  },
-  {
-    "description": " Modularer Big-Tower mit 3 Konfigurationen, Seitenteile aus Tempered Glass, Grafikkarten bis 423 mm, für zwei große... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-867_geli_867_01_285x255.jpg",
-    "inventory": 33,
-    "name": " Odyssey X Big-Tower - schwarz ",
-    "price": 459.9
-  },
-  {
-    "description": " Edler Big-Tower von PHANTEKS, Seitentür und -fenster aus Tempered Glass, optimiert für Luft- und Wasserkühlung, bis... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-109_geph_109_01_285x255.jpg",
-    "inventory": 43,
-    "name": " Enthoo 719 Big-Tower, Tempered Glass, DRGB - schwarz ",
-    "price": 189.9
-  },
-  {
-    "description": " Edler Big-Tower von PHANTEKS, Seitenteil aus Tempered Glass, optimiert für Luft- und Wasserkühlung, bis zu 503 mm... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-128_geph_128_01_285x255.jpg",
-    "inventory": 95,
-    "name": " Enthoo Pro 2 Big-Tower, Tempered Glass, ARGB - schwarz ",
-    "price": 159.9
-  },
-  {
-    "description": " Offener EE-ATX-Showcase-Tower, zwei riesige Hartglas-Scheiben, Panoramablick auf die Hardware, Wakü-optimiert mit... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-061_gert_061_01_285x255.jpg",
-    "inventory": 30,
-    "name": " Enyo Tempered Glass Showcase - schwarz ",
-    "price": 299
-  },
-  {
-    "description": " Big-Tower von Raijintek in Gelb, Showcase-Gehäuse, für E-ATX-Mainboards geeignet, mit Seiten und Front aus Tempered... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-090_gert_090_01_285x255.jpg",
-    "inventory": 30,
-    "name": " NYX PRO Showcase Big-Tower, Tempered Glass - gelb ",
-    "price": 349
-  },
-  {
-    "description": " Big-Tower von Raijintek in Titan, Showcase-Gehäuse, für E-ATX-Mainboards geeignet, mit Seiten und Front aus Tempered... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-088_gert_088_01_285x255.jpg",
-    "inventory": 42,
-    "name": " NYX PRO Showcase Big-Tower, Tempered Glass - titan ",
-    "price": 349
-  },
-  {
-    "description": " Edler Big-Tower von Raijintek in Schwarz, Dämmung an Seiten & Deckel & Boden, Mainboards bis... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-055_gert_055_01_285x255.jpg",
-    "inventory": 93,
-    "name": " Zofos Evo Silent Big-Tower - schwarz ",
-    "price": 176.9
-  },
-  {
-    "description": " Edler Big Tower von Raijintek in Schwarz, ein Seitenteil aus getöntem Hartglas, Mainboards bis EE-ATX-Formfaktor,... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-056_gert_056_01_285x255.jpg",
-    "inventory": 53,
-    "name": " Zofos Evo Window Big-Tower - schwarz, Tempered Glass ",
+    "description": " Modularer Midi-Tower in Schwarz, mit vorinstallierter Geräuschdämmung, Seitenteil aus Temperglas, Platz für zwei... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-061_gebq_061_01_285x255.jpg",
+    "inventory": 15,
+    "name": " Silent Base 802 Window Midi-Tower - Tempered Glass,... ",
     "price": 169.9
   },
   {
-    "description": " Außergewöhnliches Showcase-Gehäuse von Thermaltake, Open-Frame-Design im Hubschrauber-Look, Seitenteile und Front aus... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gexa-304_gexa_304_01_285x255.jpg",
-    "inventory": 92,
-    "name": " AH T600 TG Showcase, Tempered Glass - schwarz ",
-    "price": 349.9
+    "description": " Besonders schicker und anpassbarer Midi-Tower bis E-ATX, Seitenteil aus Temperglas, zwei vorinstallierte... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-122_gecs_122_01_285x255.jpg",
+    "inventory": 75,
+    "name": " 4000D Airflow Tempered Glass Midi-Tower - schwarz... ",
+    "price": 89.9
   },
   {
-    "description": " Modulares Super-Tower Showcase für Server, Workstation-PCs und High-End Gaming PCs mit Window aus Tempered Glas, 4x... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gexa-240_gexa_240_1g_285x255.jpg",
-    "inventory": 76,
-    "name": " The Tower 900 Super Tower / Showcase - schwarz ",
-    "price": 342.9
-  },
-  {
-    "description": " Optisch beeindruckender Big-Tower in Weiß, mit Seitenteilen aus Tempered Glass, Grafikkarte bis 41 cm, viel Platz für... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gexa-276_gexa_276_01_285x255.jpg",
-    "inventory": 21,
-    "name": " View 71 TG Snow Big-Tower, Tempered Glass - weiß ",
-    "price": 249.9
-  },
-  {
-    "description": " Modularer Big-Tower in Schwarz von be quiet! mit Dämmung, 2-in-1 Seitenpanel, PWM-Hub, Lüftersteuerung & drei... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-015_gebq_015_1g_285x255.jpg",
-    "inventory": 84,
-    "name": " Dark Base 900 Big-Tower - schwarz ",
-    "price": 199.9
-  },
-  {
-    "description": " Modularer Big-Tower in Schwarz, mit vorinstallierter Schalldämmung, Hartglas-Seitenfenster, 4-Pin-PWM-Hub für bis zu... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-029_gebq_029_01_285x255.jpg",
-    "inventory": 38,
-    "name": " Dark Base Pro 900 Black rev. 2 Big-Tower - schwarz ",
-    "price": 259.9
+    "description": " The unconventional design of Carbide Series Air 540 utilizes dual chambers to deliver cooler air to your CPU, GPU,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-022_gecs_022_1g_285x255.jpg",
+    "inventory": 72,
+    "name": " Carbide Air 540 ATX Cube - schwarz ",
+    "price": 139.9
   },
   {
     "description": " Gewaltiger Big-Tower für 2 Systeme, Mainboards bis E-ATX, umfangreicher WaKü-Support, 4x USB 3.0 & 2x USB 3.1 Typ... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-089_gecs_089_01_285x255.jpg",
-    "inventory": 39,
+    "inventory": 56,
     "name": " Obsidian 1000D Big-Tower, Tempered Glass - schwarz ",
     "price": 569.9
   },
   {
-    "description": " Hochwertiger Big-Tower Obsidian 750D in der Airflow Edition für (XL-/Micro-)ATX-Systeme mit flexiblem Innenraum &... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-065_gecs_065_1g_285x255.jpg",
-    "inventory": 88,
-    "name": " Obsidian 750D Airflow Ed Big-Tower - schwarz Window ",
-    "price": 169.9
-  },
-  {
-    "description": " Big-Tower von Fractal Design in Schwarz, für Mainboards bis EE-ATX, mit Schalldämmung & Staubfiltern, Seitenteil... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-121_gefd_121_01_285x255.jpg",
-    "inventory": 16,
-    "name": " Define 7 XL Black TG Big-Tower - Tempered Glass,... ",
-    "price": 239.9
-  },
-  {
-    "description": " Edler und modularer Big-Tower, feine Mesh-Front für guten Airflow, Radiatoren bis zu 360 mm in der Front, max.... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-137_gefd_137_01_285x255.jpg",
-    "inventory": 62,
-    "name": " Meshify 2 XL Black TG Light Tint ",
-    "price": 229.9
-  },
-  {
     "description": " Imposanter Showcase-Big-Tower, mit getöntem Tempered Glass, für Mainboards bis E-ATX, Grafikkarten bis 400 mm, bis zu... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-078_gejb_078_01_285x255.jpg",
-    "inventory": 38,
-    "name": " MOD5 Big-Tower Showcase, Tempered Glass - weiß ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-060_gejb_060_01_285x255.jpg",
+    "inventory": 1,
+    "name": " MOD5 Big-Tower Showcase, Tempered Glass - grau ",
     "price": 349.9
   },
   {
-    "description": " Extravagantes Showcase-Gehäuse von Kolink, Front + Deckel + Seitenteile aus Temperglas, Rahmen aus Stahl und Sockel... ",
+    "description": " Versatile Mini-ITX case, elegant design made of aluminium, two tinted tempered glass side panels, modular and... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejp-002_gejp_002_01_285x255.jpg",
+    "inventory": 98,
+    "name": " i100 Pro Mini-ITX Case, Tempered Glass - black ",
+    "price": 179.9
+  },
+  {
+    "description": " Extravagant showcase by Kolink, Front along with roof & side panel made of tempered glass, Frame made of steel... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gekl-081_gekl_081_01_285x255.jpg",
-    "inventory": 85,
-    "name": " Big Chungus UNIT Edition ARGB Showcase - schwarz ",
+    "inventory": 11,
+    "name": " Big Chungus UNIT Edition ARGB Showcase - black ",
     "price": 249.9
   },
   {
-    "description": " Modularer Big-Tower mit 3 Konfigurationen, Seitenteile aus Tempered Glass, Grafikkarten bis 423 mm, für zwei große... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-866_geli_866_01_285x255.jpg",
-    "inventory": 0,
-    "name": " Odyssey X Big-Tower - silber ",
-    "price": 459.9
+    "description": " Stylish Midi-Tower for motherboards up to E-ATX, Tempered glass side window, Glass front, 4x 120mm RGB fans... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gekl-035_gekl_035_01_285x255.jpg",
+    "inventory": 76,
+    "name": " Observatory RGB Mid Tower, Tempered Glass - black... ",
+    "price": 79.9
   },
   {
-    "description": " Edler Big-Tower von PHANTEKS, geschlossenes Seitenteil, optimiert für Luft- und Wasserkühlung, bis zu 503 mm lange... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-129_geph_129_01_285x255.jpg",
-    "inventory": 71,
-    "name": " Enthoo Pro 2 Big-Tower - schwarz ",
-    "price": 154.9
+    "description": " Elegant mid-tower in black, suitable for motherboards up to ATX, accommodates two dual radiators (max. 280mm),... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-857_geli_857_01_285x255.jpg",
+    "inventory": 8,
+    "name": " LANCOOL 205 Mesh Mid-Tower - Black ",
+    "price": 79.9
   },
   {
-    "description": " Big-Tower von Raijintek in Rot, Showcase-Gehäuse, für E-ATX-Mainboards geeignet, mit Seiten und Front aus Tempered... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-091_gert_091_01_285x255.jpg",
-    "inventory": 75,
-    "name": " NYX PRO Showcase Big-Tower, Tempered Glass - rot ",
-    "price": 349
+    "description": " Elegant mid tower in black, suitable for motherboards up to E-ATX, accommodates two radiators (max. 360 mm + 280 mm),... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-847_geli_847_01_285x255.jpg",
+    "inventory": 84,
+    "name": " LANCOOL 215 Mid Tower - ARGB, Tempered Glass, Black ",
+    "price": 84.9
   },
   {
-    "description": " High-End Aluminium Big-Tower TJ07 mit Window, sechs vorinstallierte Lüfter, Platz für 7 optische Laufwerke und 6... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gesv-251_gesv_251_1g_285x255.jpg",
-    "inventory": 68,
-    "name": " SST-TJ07B-W USB 3.0 TemJin Big-Tower - black Window ",
-    "price": 348.69
+    "description": " Black mid tower with a modular rear panel, Tempered glass front and left side panel, Roof and left side made of... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-849_geli_849_01_285x255.jpg",
+    "inventory": 14,
+    "name": " O11 Dynamic Mini, Mid Tower, Tempered Glass - black ",
+    "price": 109.9
   },
   {
-    "description": " Modularer Big-Tower in Schwarz-Silber von be quiet! mit Dämmung, 2-in-1 Seitenpanel, PWM-Hub, Lüftersteuerung &... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-016_gebq_016_1g_285x255.jpg",
-    "inventory": 0,
-    "name": " Dark Base 900 Big-Tower - silber ",
-    "price": 199.9
+    "description": " White mid tower with a modular rear panel, Tempered glass front and left side panel, Roof and left side made of... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-850_geli_850_01_285x255.jpg",
+    "inventory": 33,
+    "name": " O11 Dynamic Mini, Mid Tower, Tempered Glass - white ",
+    "price": 109.9
   },
   {
-    "description": " Modularer Big-Tower in Schwarz-Orange, mit vorinstallierter Schalldämmung, Hartglas-Seitenfenster, 8x 4-Pin-PWM-Hub,... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-028_gebq_028_01_285x255.jpg",
-    "inventory": 22,
-    "name": " Dark Base Pro 900 Orange rev. 2 Big-Tower -... ",
-    "price": 259.9
+    "description": " All white mid-tower with a modular rear panel, Tempered glass front and left side panel, Roof and left side made of... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-851_geli_851_01_285x255.jpg",
+    "inventory": 34,
+    "name": " O11 Dynamic Mini Snow Edition, Mid-Tower, Tempered... ",
+    "price": 119.9
   },
   {
-    "description": " Weiß-schwarzer Big-Tower (XL-ATX) mit beleuchteten 140er-Lüftern, 360er-Radiator-Mountings, Lüftersteuerung & Window ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-032_gecs_032_1g_285x255.jpg",
-    "inventory": 47,
-    "name": " Graphite 780T Big-Tower - weiß ",
+    "description": " Huge Dual-Chamber Midi-Tower, Side- and front in tempered glass, Graphics cards up to 446 mm, 3x 360 mm radiators... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-819_geli_819_01_285x255.jpg",
+    "inventory": 34,
+    "name": " O11Dynamic XL (ROG Certified) Mid Tower - White ",
     "price": 219.9
   },
   {
-    "description": " Hochwertiger Big-Tower Obsidian 750D von Corsair für (XL-/Micro-)ATX-Systeme mit flexiblem Innenraum & 3x... ",
+    "description": " Compact Dual-Chamber Midi-Tower, Designed by Lian Li & der8auer, Tempered Glass front- and side-panel,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-807_geli_807_01_285x255.jpg",
+    "inventory": 42,
+    "name": " PC-O11 Dynamic Midi Tower, Tempered Glass - Black ",
+    "price": 139.9
+  },
+  {
+    "description": " Stylischer Midi-Tower von Lian Li, Zwei-Kammer-Design aus Aluminium, Tempered Glass an Front und Seite, max. 9x... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-769_geli_769_01_285x255.jpg",
+    "inventory": 12,
+    "name": " PC-O11WXC Midi-Tower - schwarz Window ",
+    "price": 199.9
+  },
+  {
+    "description": " Black mid-tower with excellent airflow, Tempered glass side panel, RGB lighting and controller, Support for E-ATX... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-126_geph_126_01_285x255.jpg",
+    "inventory": 27,
+    "name": " Eclipse P500A D-RGB Mid-Tower, Tempered Glass - black ",
+    "price": 149.9
+  },
+  {
+    "description": " Premium Full-Tower from PHANTEKS, Side door and -window in tempered glass, Optimised for air- and water cooling,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-109_geph_109_01_285x255.jpg",
+    "inventory": 69,
+    "name": " Enthoo 719 Full-Tower, Tempered Glass, DRGB - Black ",
+    "price": 189.9
+  },
+  {
+    "description": " A superlative full-tower modular case with an abundance of features including: RGB-LED lighting, tempered glass... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-063_geph_063_1g_285x255.jpg",
+    "inventory": 11,
+    "name": " Enthoo Elite Big-Tower - black Window ",
+    "price": 899.9
+  },
+  {
+    "description": " Edler Big-Tower von PHANTEKS, Seitenteil aus Tempered Glass, optimiert für Luft- und Wasserkühlung, bis zu 503 mm... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-128_geph_128_01_285x255.jpg",
+    "inventory": 88,
+    "name": " Enthoo Pro 2 Big-Tower, Tempered Glass, ARGB - schwarz ",
+    "price": 159.9
+  },
+  {
+    "description": " Big-Tower von Raijintek in Gelb, Showcase-Gehäuse, für E-ATX-Mainboards geeignet, mit Seiten und Front aus Tempered... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-090_gert_090_01_285x255.jpg",
+    "inventory": 91,
+    "name": " NYX PRO Showcase Big-Tower, Tempered Glass - gelb ",
+    "price": 349
+  },
+  {
+    "description": " Compact Mini-ITX case, Mesh and tempered glass side panels, supports full-size GPUs up to 336mm in length, room for... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gesp-001_gesp_001_01_285x255.jpg",
+    "inventory": 78,
+    "name": " Meshlicious Mini-ITX Case - Tempered Glass, black ",
+    "price": 119.9
+  },
+  {
+    "description": " Compact Mini-ITX case, Mesh and tempered glass side panels, supports full-size GPUs up to 336mm in length, room for... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gesp-002_gesp_002_01_285x255.jpg",
+    "inventory": 19,
+    "name": " Meshlicious Mini-ITX Case - Tempered Glass, white ",
+    "price": 119.9
+  },
+  {
+    "description": " Kompaktes Mini-ITX-Gehäuse in Schwarz, für Mainboards im Format Mini-ITX / Mini-DTX, zwei vertikale... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geco-312_geco_312_01_285x255.jpg",
+    "inventory": 54,
+    "name": " MasterBox NR200P Mini-ITX Gehäuse, Tempered Glass -... ",
+    "price": 109.9
+  },
+  {
+    "description": " Das perfekte Bundle für preisbewusste Bastler:, DAN Cases A4-SFX V4.1 Mini-ITX-Gehäuse mit USB 3.1 Typ C, aus... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebu-217_gebu_217_01_285x255.jpg",
+    "inventory": 25,
+    "name": " DAN Cases A4-SFX V4.1 - schwarz + Alpenföhn Black... ",
+    "price": 243.6
+  },
+  {
+    "description": " Stylish Midi-Tower for motherboards up to ATX, Tempered glass side window, Glass front, 4x 120mm ARGB fans... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gekl-065_gekl_065_01_285x255.jpg",
+    "inventory": 99,
+    "name": " Observatory Lite RGB Mid Tower - black ",
+    "price": 59.9
+  },
+  {
+    "description": " Kleines und dezentes Mini-ITX-/Micro-ATX-Gehäuse, mit überraschend viel Platz:, 4x SSD, bis zu 165 mm hohe CPU-Kühler... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gekl-006_gekl_006_1g_285x255.jpg",
+    "inventory": 72,
+    "name": " Satellite Mini-ITX- / Micro-ATX-Gehäuse - schwarz ",
+    "price": 34.9
+  },
+  {
+    "description": " Stylischer Midi-Tower für Mainboards bis ATX, aparte Vorderseite mit Unendlichkeitsspiegeleffekt und RGB-Beleuchtung,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gekl-085_gekl_085_01_285x255.jpg",
+    "inventory": 46,
+    "name": " VOID RGB Midi-Tower - weiß Window ",
+    "price": 54.9
+  },
+  {
+    "description": " Edel-Tischgehäuse mit umschaltbarer Glasplatte, für Dual-Systeme bis 2x E-ATX, optimiert für Custom-Wasserkühlungen,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-834_geli_834_01_285x255.jpg",
+    "inventory": 29,
+    "name": " DK-05F Tischgehäuse (höhenverstellbar) - schwarz ",
+    "price": 1999.9
+  },
+  {
+    "description": " Micro-ATX-Gehäuse in Schwarz, für Micro-ATX- und Mini-ITX-Mainboards, Platz für zwei Dual-Radiatoren (280 mm),... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-837_geli_837_01_285x255.jpg",
+    "inventory": 37,
+    "name": " LANCOOL 205M Micro-ATX-Gehäuse, Tempered Glass -... ",
+    "price": 49.9
+  },
+  {
+    "description": " Huge Dual-Chamber Midi-Tower, Side- and front in tempered glass, Graphics cards up to 446 mm, 3x 360 mm radiators... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-818_geli_818_01_285x255.jpg",
+    "inventory": 84,
+    "name": " O11Dynamic XL (ROG Certified) Mid Tower - Black ",
+    "price": 219.9
+  },
+  {
+    "description": " Compact dual-chamber midi-tower, In the special Razer Edition, Side- and front panel in tempered glass, 3x 360 mm... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-817_geli_817_01_285x255.jpg",
+    "inventory": 11,
+    "name": " PC-O11D Razer Edition Mid Tower, Tempered Glass ",
+    "price": 179.9
+  },
+  {
+    "description": " Premium black Midi-Tower Enthoo Evolv X , Tempered glass side panels , Addressable RGB-LED lighting , Space for 2x... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-089_geph_089_01_285x255.jpg",
+    "inventory": 94,
+    "name": " Enthoo Evolv X Mid Tower, RGB, Tempered Glass - Black ",
+    "price": 219.9
+  },
+  {
+    "description": " Schicker Midi-Tower in Schwarz, Seitenteil und Front aus Tempered Glass, Platz für 2x 280-mm-Radiator, max.... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-099_gert_099_01_285x255.jpg",
+    "inventory": 92,
+    "name": " PONOS TG4 Gehäuse - schwarz ",
+    "price": 87.1
+  },
+  {
+    "description": " Compact Mini-ITX case, All-mesh exterior, supports full-size GPUs up to 336mm in length, room for 280mm radiators,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gesp-003_gesp_003_01_285x255.jpg",
+    "inventory": 78,
+    "name": " Meshlicious Full Mesh Mini-ITX Case - black ",
+    "price": 129.9
+  },
+  {
+    "description": " Edler Midi-Tower im ROG-Design, Seitentüren und Front aus Tempered Glass, adressierbare RGB-LED-Beleuchtung, Platz... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geas-017_geas_017_01_285x255.jpg",
+    "inventory": 78,
+    "name": " ROG Strix Helios Midi-Tower, Tempered Glass - schwarz ",
+    "price": 279.9
+  },
+  {
+    "description": " Midi-Tower mir gutem Airflow, Mesh an Deckel und Front, Seitenteil aus Tempered Glass, ARGB-Strips an Front und unter... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gebq-059_gebq_059_01_285x255.jpg",
+    "inventory": 92,
+    "name": " Pure Base 500DX Midi-Tower - schwarz ",
+    "price": 99.9
+  },
+  {
+    "description": " Schicker Mini-Tower von Cooler Master für Micro-ATX-Format, Grafikkarten bis 360 mm, 2x Radiatoren möglich, 1x... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geco-292_geco_292_01_285x255.jpg",
+    "inventory": 59,
+    "name": " MasterBox Q300L Mini Gehäuse, schwarz ",
+    "price": 39.9
+  },
+  {
+    "description": " The Obsidian Series 750D full tower PC case combines generous expansion flexibility, room for advanced cooling... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gecs-023_gecs_023_1g_285x255.jpg",
-    "inventory": 48,
+    "inventory": 18,
     "name": " Obsidian 750D Big-Tower - schwarz Window ",
     "price": 149.9
   },
   {
-    "description": " Big-Tower von Fractal Design in Schwarz, für Mainboards bis EE-ATX, mit Schalldämmung & Staubfiltern, Seitenteil... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gefd-122_gefd_122_01_285x255.jpg",
-    "inventory": 49,
-    "name": " Define 7 XL Black Dark TG Big-Tower - getöntes... ",
-    "price": 239.9
+    "description": " Compact gaming case, made of high-quality aluminium in black, supports SFX PSU, supports Mini-ITX motherboards (Intel... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gedn-005_gedn_005_01_285x255.jpg",
+    "inventory": 89,
+    "name": " A4-SFX V4.1 Mini-ITX Gaming Case - Black ",
+    "price": 219.9
   },
   {
-    "description": " Imposanter Showcase-Big-Tower, mit getöntem Tempered Glass, für Mainboards bis E-ATX, Grafikkarten bis 400 mm, bis zu... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gejb-065_gejb_065_01_285x255.jpg",
-    "inventory": 8,
-    "name": " MOD5 Big-Tower Showcase, Tempered Glass - schwarz ",
-    "price": 349.9
+    "description": " Premium mid-tower case in black, Designed for motherboards up to E-ATX, large mesh surfaces, Tempered glass side... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-843_geli_843_01_285x255.jpg",
+    "inventory": 60,
+    "name": " LANCOOL II Mesh Performance Mid-Tower, Tempered... ",
+    "price": 109.9
   },
   {
-    "description": " Edler Big-Tower von PHANTEKS, Seitentür und -fenster aus Tempered Glass, optimiert für Luft- und Wasserkühlung, bis... ",
+    "description": " Premium mid-tower case in black, Designed for motherboards up to E-ATX, large mesh surfaces, Tempered glass side... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-841_geli_841_01_285x255.jpg",
+    "inventory": 68,
+    "name": " LANCOOL II Mesh RGB Mid-Tower, Tempered Glass - black ",
+    "price": 109.9
+  },
+  {
+    "description": " Huge Dual-Chamber Midi Tower, Side panel and front made of Tempered Glass, graphic cards up to 446 mm, 3x 360 mm... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-825_geli_825_01_285x255.jpg",
+    "inventory": 39,
+    "name": " O11Dynamic XL (ROG Certified) Mid Tower - silver ",
+    "price": 219.9
+  },
+  {
+    "description": " Compact Dual-Chamber Midi-Tower, Designed by Lian Li & der8auer, Tempered Glass front- and side-panel,... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geli-808_geli_808_01_285x255.jpg",
+    "inventory": 74,
+    "name": " PC-O11 Dynamic Midi Tower, Tempered Glass - White ",
+    "price": 139.9
+  },
+  {
+    "description": " Premium Full-Tower from PHANTEKS, Side door and -window in tempered glass, Optimised for air- and water cooling,... ",
     "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-110_geph_110_01_285x255.jpg",
-    "inventory": 25,
-    "name": " Enthoo 719 Big-Tower, Tempered Glass, DRGB - anthrazit ",
+    "inventory": 38,
+    "name": " Enthoo 719 Full-Tower, Tempered Glass, DRGB -... ",
     "price": 189.9
   },
   {
-    "description": " Modularer Big-Tower der Superlative mit vielen Features:, RGB-LED-Beleuchtung, Window aus Hartglas, großer... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-063_geph_063_1g_285x255.jpg",
-    "inventory": 37,
-    "name": " Enthoo Elite Big-Tower - schwarz Window ",
-    "price": 899.9
+    "description": " Offener EE-ATX-Showcase-Tower, zwei riesige Hartglas-Scheiben, Panoramablick auf die Hardware, Wakü-optimiert mit... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-061_gert_061_01_285x255.jpg",
+    "inventory": 78,
+    "name": " Enyo Tempered Glass Showcase - schwarz ",
+    "price": 299
   },
   {
-    "description": " Schwarzer Design-Big-Tower mit blauer LED-Beleuchtung, massiven Wakü-Optionen, 5x 140er-Lüftern & innovativem... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/geph-001_geph_001_1g_285x255.jpg",
-    "inventory": 95,
-    "name": " Enthoo Primo Big-Tower, blaue LED - schwarz ",
-    "price": 239.9
-  },
-  {
-    "description": " Big-Tower von Raijintek in Weiß, Showcase-Gehäuse, für E-ATX-Mainboards geeignet, mit Seiten und Front aus Tempered... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-089_gert_089_01_285x255.jpg",
-    "inventory": 76,
-    "name": " NYX PRO Showcase Big-Tower, Tempered Glass - weiß ",
-    "price": 349
-  },
-  {
-    "description": " Optisch beeindruckendes Cube-Gehäuse von Thermaltake, Seitenteile & Deckel & Front aus Hartglas, 2x... ",
-    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gexa-300_gexa_300_01_285x255.jpg",
-    "inventory": 52,
-    "name": " Level 20 HT Big-Tower, Tempered Glass - schwarz ",
-    "price": 199.9
+    "description": " Halboffener Benchtable (ATX) aus eloxiertem Aluminium, mit Seitenteilen aus getöntem Hartglas, smarter... ",
+    "imgUrl": "https://static3.caseking.de/media/image/thumbnail/gert-042_gert_042_1g_285x255.jpg",
+    "inventory": 45,
+    "name": " PAEAN Benchtable / Showcase - schwarz Window ",
+    "price": 154.9
   }
 ]

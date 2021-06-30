@@ -24,9 +24,9 @@ let komma = System.Text.RegularExpressions.Regex(",")
 let star = System.Text.RegularExpressions.Regex("\*")
 let numberMatcher = System.Text.RegularExpressions.Regex("\d*\.\d*")
 
-let documents = [ "NVIDIA Grafikkarten online kaufen.html"
-                  "AMD Grafikkarten online kaufen.html"
-                  "Big-Tower Computer Gehaeuse online kaufen.html" ]
+let documents = [ "NVIDIA Graphics Cards order online _ CASEKING.html"
+                  "AMD Graphics Cards order online _ CASEKING.html"
+                  "PC Cases order online _ CASEKING.html" ]
                 |> List.map(fun it -> "/home/victor-da/Downloads/" + it)
 
 let loadProductsFromHtmlFile (caseking: HtmlDocument) =
@@ -63,12 +63,13 @@ let loadProductsFromHtmlFile (caseking: HtmlDocument) =
         let it =
             str
             // |> replace eur ""
-            |> replace dot ""
-            |> replace komma "."
+            // |> replace dot ""
+            |> replace komma ""
             // |> replace star ""
         
+        // printfn "1prior: %s, now: %s" str it
         let it = numberMatcher.Match(it).Value
-        printfn "prior: %s, now: %s" str it
+        // printfn "2prior: %s, now: %s" str it
         float it
 
     let adjustImageUrl (str: string) =

@@ -57,18 +57,7 @@ const LoginScreen: React.FC<Props> = ({onLogin}) => {
       <Grid.Column style={{ maxWidth: 450 }}>
         <Header as='h1' textAlign='center' size='huge' style={{color: '#223668'}}>
           <Header.Content>
-            Create
-            <Image
-              as='a'
-              href='https://www.daml.com/'
-              target='_blank'
-              src='/daml.svg'
-              alt='Daml Logo'
-              spaced
-              size='small'
-              verticalAlign='bottom'
-            />
-            App
+            DigitalAssetOnlineShop (DAOS)
           </Header.Content>
         </Header>
         <Form size='large' className='test-select-login-screen'>

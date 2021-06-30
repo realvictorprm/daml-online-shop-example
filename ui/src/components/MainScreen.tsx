@@ -18,8 +18,8 @@ const MainScreen: React.FC<Props> = ({onLogout}) => {
     <>
       <Menu icon borderless>
         <Menu.Item>
-          <Header style={{ color: '#4e80f9' }} size='huge'>
-            DAOS (DigitalAssetOnlineShop)
+          <Header as='h1' style={{ color: '#4e80f9' }} size='huge' textAlign="center">
+          DigitalAssetOnlineShop (DAOS)
           </Header>
           {/* <Image
             as='a'

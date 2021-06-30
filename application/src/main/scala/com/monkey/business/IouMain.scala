@@ -96,11 +96,13 @@ object IouMain extends App with StrictLogging {
         }})
     } yield ()
 
-  val issuerFlow: Future[Unit] = for {
+  val issuerFlow = for {
     clientUtil <- clientUtilF
     _ = logger.info(s"Client API initialization completed, Ledger ID: ${clientUtil.toString}")
-    _ <- rawProducts.flatMap(createProduct).traverse(clientUtil.submitCommand(admin, workflowIdAdmin, _))
-  } yield ()
+    res <- rawProducts.flatMap(createProduct).traverse(clientUtil.submitCommand(admin, workflowIdAdmin, _))
+  } yield res
+
+  issuerFlow.onComplete(println)
 
   val returnCodeF: Future[Int] = issuerFlow.transform {
     case Success(_) =>

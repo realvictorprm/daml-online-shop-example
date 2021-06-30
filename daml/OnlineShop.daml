@@ -87,6 +87,7 @@ template Order
     customer: Party
     products: [ProductName]
     status: OrderStatus
+    timestamp: Time
   where
     signatory customer, admin
 
@@ -97,13 +98,14 @@ template OrderRequest
   where
     signatory customer
     ensure customer /= everyone
-
+  
     controller admin can
       OrderRequest_Process: ContractId Order
         do
           reservationIds <- reservations & map (\productName -> fetchByKey @Reservation (customer, productName)) & sequence & fmap (map fst)
           forA_ reservationIds $ \cid -> archive cid
-          create Order with customer, products = reservations, status = ReceivedOrder
+          time <- getTime
+          create Order with customer, products = reservations, status = ReceivedOrder, timestamp = time
 
 data DeclineReason =
   BasketAlreadyContainsProduct

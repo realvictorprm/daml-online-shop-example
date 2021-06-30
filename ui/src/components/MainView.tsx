@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import React, { Fragment, useState } from 'react';
-import { Container, Grid, Header, Segment, List, Button, Portal, Message, Transition, Icon, Step } from 'semantic-ui-react';
+import { Container, Grid, Header, Segment, List, Button, Portal, Message, Transition, Icon, Step, Dropdown } from 'semantic-ui-react';
 import { useParty, useLedger, useStreamQueries } from '@daml/react';
 import { OnlineShop } from '@daml.js/create-daml-app'
 import { AcknowledgeDeclinedReservation, CreateReservationRequest, DeclinedReservation, Order, OrderRequest, ProductInfo, Reservation } from '@daml.js/create-daml-app/lib/OnlineShop';
@@ -10,6 +10,10 @@ import ProductList from './ProductList';
 import { ContractId } from '@daml/types';
 import { SemanticToastContainer, toast } from 'react-semantic-toasts';
 import 'react-semantic-toasts/styles/react-semantic-alert.css';
+
+type SortBy =
+  | "Name"
+  | "Price"
 
 // USERS_BEGIN
 const MainView: React.FC = () => {
@@ -32,7 +36,8 @@ const MainView: React.FC = () => {
   const raw_declinedReservations = useStreamQueries(DeclinedReservation);
   const declinedReservations = raw_declinedReservations.contracts.map(r => r.payload)
 
-  const [foo, bar] = useState(true)
+  const sortByName = "Name"
+  const [sortBy, setSortBy] = useState(sortByName)
 
   const empty: ContractId<DeclinedReservation>[] = []
 
@@ -49,20 +54,35 @@ const MainView: React.FC = () => {
   }
 
   const productList =
-    <Grid.Column>
-      <Header as='h1' size='medium' color='blue' textAlign='center' style={{ padding: '1ex 0em 0ex 0em', flexGrow: 0 }}>
-        {`Products`}
-      </Header>
+    <Grid.Column width={8}>
+      <Grid columns={2}>
+        <Grid.Column>
+
+          <Header as='h1' size='medium' color='blue' textAlign='center' style={{ padding: '1ex 0em 0ex 0em', flexGrow: 0 }}>
+            {`Products`}
+          </Header>
+        </Grid.Column>
+        <Grid.Column>
+          <Dropdown
+            placeholder='Sort by'
+            fluid
+            selection
+            onChange={(_, data) => setSortBy(data.value?.toString() ?? "Name")}
+            options={[{key: "Name", text: "Name", value: "Name" }, { key: "Price", text: "Price", value: "Price" }]}
+            value={sortBy}
+          />
+        </Grid.Column>
+      </Grid>
       <Segment>
         <ProductList
-          products={products}
+          products={products.sort((a, b) => sortBy == "Name" ? a.name.localeCompare(b.name) : Number(a.price) - Number(b.price))}
           onBuy={onPutInBasket}
         />
       </Segment>
     </Grid.Column>
 
   const basketView =
-    <Grid.Column>
+    <Grid.Column width={2}>
       <Header as='h1' size='medium' color='blue' textAlign='center' style={{ padding: '1ex 0em 0ex 0em', flexGrow: 0 }}>
         {`Basket`}
       </Header>
@@ -88,9 +108,13 @@ const MainView: React.FC = () => {
             )}
             <List.Item style={{ alignSelf: "flexEnd" }}>
               <List.Content floated="right">
-                <Button icon color='orange' onClick={_ => onOrder()} style={{ flexGrow: 0, alignment: "Right" }}>
-                  Order now  <Icon name='arrow circle right' />
-                </Button>
+                <Button
+                  icon='arrow circle right'
+                  color='orange'
+                  onClick={_ => onOrder()}
+                  label={{ color: 'orange', as: 'a', basic: true, content: 'Order now' }}
+                  labelPosition='left'
+                  style={{ flexGrow: 0, alignment: "Right" }} />
               </List.Content>
             </List.Item>
           </List>
@@ -139,27 +163,60 @@ const MainView: React.FC = () => {
   const mkOrderProductList = (order: Order) =>
     <Segment>
       <List divided relaxed>
+        <List.Item>
+          <List.Content>
+            <Grid columns={2}>
+              <Grid.Row>
+                <Grid.Column>
+                  Order from
+                </Grid.Column>
+                <Grid.Column textAlign='right'>
+                  {order.timestamp}
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column>
+                  Total
+                </Grid.Column>
+                <Grid.Column textAlign='right'>
+                  {order.products.map(product => productMap.get(product)?.price).reduce((acc, curr) => {
+                    let ham = curr ?? '0.0'
+                    return acc + Number(ham)
+                  }, 0.0)
+                  } CHF
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </List.Content>
+        </List.Item>
         {[...order.products].sort().map(product =>
           <List.Item key={product}>
-            <List.Header>{product}</List.Header>
-            <List.Content floated="right">
-              {productMap.get(product)?.price} CHF
-            </List.Content>
             <List.Content>
-              <img width="40%" src={productMap.get(product)?.imageUrl} />
+              <Grid columns={3}>
+                <Grid.Row>
+                  <Grid.Column>
+                    <img width="40%" src={productMap.get(product)?.imageUrl} />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <List>
+                      <List.Item>
+                        <List.Header>
+                          {product}
+                        </List.Header>
+                        <List.Content>
+                          {productMap.get(product)?.description}
+                        </List.Content>
+                      </List.Item>
+                    </List>
+                  </Grid.Column>
+                  <Grid.Column textAlign='right'>
+                    {productMap.get(product)?.price} CHF
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
             </List.Content>
           </List.Item>
         )}
-        <List.Item>
-          Total
-          <List.Content floated="right">
-            {order.products.map(product => productMap.get(product)?.price).reduce((acc, curr) => {
-              let ham = curr ?? '0.0'
-              return acc + Number(ham)
-            }, 0.0)
-            } CHF
-          </List.Content>
-        </List.Item>
       </List>
       {mkOrderStatus(order)}
     </Segment>
@@ -210,7 +267,7 @@ const MainView: React.FC = () => {
   return (
     <Container fluid>
       {showPortal()}
-      <Grid centered columns={3} style={{ marginLeft: '1em', marginRight: '1em' }}>
+      <Grid centered divided columns={3} style={{ marginLeft: '1em', marginRight: '1em' }}>
         <Grid.Row stretched>
           <Grid.Column>
             <Header as='h1' size='huge' color='blue' textAlign='center' style={{ padding: '1ex 0em 0ex 0em' }}>
@@ -218,8 +275,10 @@ const MainView: React.FC = () => {
             </Header>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row stretched>
-          {[productList, basketView, ordersView]}
+        <Grid.Row >
+          {productList}
+          {basketView}
+          {ordersView}
         </Grid.Row>
       </Grid>
     </Container>

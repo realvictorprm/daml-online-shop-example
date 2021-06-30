@@ -10,6 +10,7 @@ import ProductList from './ProductList';
 import { ContractId } from '@daml/types';
 import { SemanticToastContainer, toast } from 'react-semantic-toasts';
 import 'react-semantic-toasts/styles/react-semantic-alert.css';
+import { Tuple2 } from '../../daml.js/40f452260bef3f29dede136108fc08a88d5a5250310281067087da6f0baddff7/lib/DA/Types/module';
 
 type SortBy =
   | "Name"
@@ -53,8 +54,12 @@ const MainView: React.FC = () => {
     await ledger.create(OrderRequest, { customer: username, reservations: reservations.map(res => res.productName) })
   }
 
+  const removeReservation = async (reservationCid: ContractId<Reservation>) => {
+    await ledger.exercise(Reservation.Reservation_CanceledByCustomer, reservationCid, {})
+  }
+
   const productList =
-    <Grid.Column width={8}>
+    <Grid.Column width={7}>
       <Grid columns={2}>
         <Grid.Column>
 
@@ -68,7 +73,7 @@ const MainView: React.FC = () => {
             fluid
             selection
             onChange={(_, data) => setSortBy(data.value?.toString() ?? "Name")}
-            options={[{key: "Name", text: "Name", value: "Name" }, { key: "Price", text: "Price", value: "Price" }]}
+            options={[{ key: "Name", text: "Name", value: "Name" }, { key: "Price", text: "Price", value: "Price" }]}
             value={sortBy}
           />
         </Grid.Column>
@@ -82,7 +87,7 @@ const MainView: React.FC = () => {
     </Grid.Column>
 
   const basketView =
-    <Grid.Column width={2}>
+    <Grid.Column width={3}>
       <Header as='h1' size='medium' color='blue' textAlign='center' style={{ padding: '1ex 0em 0ex 0em', flexGrow: 0 }}>
         {`Basket`}
       </Header>
@@ -90,20 +95,22 @@ const MainView: React.FC = () => {
 
         {(reservations.length > 0) ?
           <List divided relaxed>
-            {[...reservations].sort((x, y) => x.productName.localeCompare(y.productName)).map(reservation =>
-              <List.Item key={reservation.productName}>
-                <List.Content>
-                  <List.Header className='test-select-user-in-network'>{reservation.productName}</List.Header>
-                  <List.Content floated="right">
-                    {productMap.get(reservation.productName)?.price} CHF
-                  </List.Content>
-                  <List.Content>
-                    <img width="40%" src={productMap.get(reservation.productName)?.imageUrl} />
-                  </List.Content>
-                  <List.Description>
-
-                  </List.Description>
-                </List.Content>
+            {[...raw_reservations.contracts].sort((x, y) => x.payload.productName.localeCompare(y.payload.productName)).map(reservation =>
+              <List.Item key={reservation.payload.productName}>
+                <Grid columns={2}>
+                  <Grid.Column stretched>
+                    <img style={{ maxWidth: '100em' }} src={productMap.get(reservation.payload.productName)?.imageUrl} />
+                  </Grid.Column>
+                  <Grid.Column stretched>
+                    <Grid.Row>
+                      <Header>{reservation.payload.productName}</Header>
+                      {productMap.get(reservation.payload.productName)?.price} EUR
+                    </Grid.Row>
+                    <Grid.Row style={{alignSelf: "flex-end"}}>
+                      <Button icon='trash' onClick={_ => removeReservation(reservation.contractId)} />
+                    </Grid.Row>
+                  </Grid.Column>
+                </Grid>
               </List.Item>
             )}
             <List.Item style={{ alignSelf: "flexEnd" }}>
@@ -183,7 +190,7 @@ const MainView: React.FC = () => {
                     let ham = curr ?? '0.0'
                     return acc + Number(ham)
                   }, 0.0)
-                  } CHF
+                  } EUR
                 </Grid.Column>
               </Grid.Row>
             </Grid>
@@ -195,7 +202,7 @@ const MainView: React.FC = () => {
               <Grid columns={3}>
                 <Grid.Row>
                   <Grid.Column>
-                    <img width="40%" src={productMap.get(product)?.imageUrl} />
+                    <img style={{ maxWidth: '!important 20em', maxHeight: '!important 20em' }} src={productMap.get(product)?.imageUrl} />
                   </Grid.Column>
                   <Grid.Column>
                     <List>
@@ -210,7 +217,7 @@ const MainView: React.FC = () => {
                     </List>
                   </Grid.Column>
                   <Grid.Column textAlign='right'>
-                    {productMap.get(product)?.price} CHF
+                    {productMap.get(product)?.price} EUR
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
